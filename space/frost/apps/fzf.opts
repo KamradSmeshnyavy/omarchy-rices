@@ -1,0 +1,5 @@
+# Space Frost — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#24283b,bg+:#34384e,fg:#8a91ae,fg+:#c0caf5
+--color=hl:#7dcfff,hl+:#7dcfff,info:#6a7297,prompt:#7dcfff
+--color=pointer:#7dcfff,marker:#9ece6a,spinner:#7aa2f7,header:#7dcfff
+--color=border:#40455c,label:#c0caf5,query:#c0caf5,selected-bg:#3d5772

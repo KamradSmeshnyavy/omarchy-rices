@@ -1,0 +1,12 @@
+# Space Atlas — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#bf616a"
+magenta = "#d08a91"
+red = "#d08a91"
+yellow = "#88c0d0"
+green = "#a3be8c"
+cyan = "#a7aebd"
+blue = "#81a1c1"
+foreground = "#d8dee9"
+background = "#2e3440"
+dark_background = "#363c48"
+lighter_background = "#3f4551"

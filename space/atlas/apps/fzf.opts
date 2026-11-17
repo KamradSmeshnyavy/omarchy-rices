@@ -1,0 +1,5 @@
+# Space Atlas — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#2e3440,bg+:#3f4551,fg:#989ea9,fg+:#d8dee9
+--color=hl:#bf616a,hl+:#bf616a,info:#7b8391,prompt:#bf616a
+--color=pointer:#bf616a,marker:#a3be8c,spinner:#81a1c1,header:#88c0d0
+--color=border:#4d535e,label:#d8dee9,query:#d8dee9,selected-bg:#57414c

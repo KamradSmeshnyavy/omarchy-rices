@@ -1,0 +1,5 @@
+# Space Dusk — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#282a36,bg+:#3d3f49,fg:#8491b8,fg+:#f8f8f2
+--color=hl:#ff79c6,hl+:#ff79c6,info:#6272a4,prompt:#ff79c6
+--color=pointer:#ff79c6,marker:#50fa7b,spinner:#8be9fd,header:#ff79c6
+--color=border:#4d4f58,label:#f8f8f2,query:#f8f8f2,selected-bg:#64405e

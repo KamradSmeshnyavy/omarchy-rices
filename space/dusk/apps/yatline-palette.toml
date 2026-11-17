@@ -1,0 +1,12 @@
+# Space Dusk — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#ff79c6"
+magenta = "#ff79c6"
+red = "#ff5555"
+yellow = "#ff79c6"
+green = "#50fa7b"
+cyan = "#c4c9d7"
+blue = "#8be9fd"
+foreground = "#f8f8f2"
+background = "#282a36"
+dark_background = "#32343f"
+lighter_background = "#3d3f49"

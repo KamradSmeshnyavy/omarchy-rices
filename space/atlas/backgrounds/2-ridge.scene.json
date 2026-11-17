@@ -1,0 +1,14 @@
+{
+ "scene": "terrain",
+ "seed": 431,
+ "workspace": 3,
+ "land": {
+  "atlas": true
+ },
+ "colors": {
+  "bg": "#2e3440",
+  "accent": "#bf616a",
+  "fg": "#d8dee9",
+  "tone": "#81a1c1"
+ }
+}

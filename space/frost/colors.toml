@@ -1,0 +1,39 @@
+# Space Frost — omarchy-rices/space (по мотивам Space из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#7dcfff"
+cursor = "#7dcfff"
+selection = "#3d5772"
+selection_foreground = "#c0caf5"
+selection_background = "#3d5772"
+muted = "#6a7297"
+
+background = "#24283b"
+dark_background = "#2c3044"
+darker_background = "#24283b"
+lighter_background = "#34384e"
+
+foreground = "#c0caf5"
+dark_foreground = "#6a7297"
+light_foreground = "#8a91ae"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#7dcfff"
+hyprland_inactive_border = "#40455c"
+
+red = "#f7768e"
+yellow = "#e0af68"
+orange = "#e0af68"
+green = "#9ece6a"
+cyan = "#7dcfff"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+brown = "#8b7254"
+
+bright_red = "#7dcfff"
+bright_yellow = "#e0af68"
+bright_green = "#9ece6a"
+bright_cyan = "#7dcfff"
+bright_blue = "#7aa2f7"
+bright_magenta = "#7aa2f7"

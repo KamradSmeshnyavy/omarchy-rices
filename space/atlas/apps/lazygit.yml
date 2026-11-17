@@ -1,0 +1,17 @@
+# Space Atlas — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#bf616a", bold]
+    inactiveBorderColor: ["#4d535e"]
+    searchingActiveBorderColor: ["#88c0d0", bold]
+    optionsTextColor: ["#81a1c1"]
+    selectedLineBgColor: ["#3f4551"]
+    inactiveViewSelectedLineBgColor: ["#363c48"]
+    cherryPickedCommitFgColor: ["#d08a91"]
+    cherryPickedCommitBgColor: ["#3f4551"]
+    markedBaseCommitFgColor: ["#81a1c1"]
+    markedBaseCommitBgColor: ["#3f4551"]
+    unstagedChangesColor: ["#d08a91"]
+    defaultFgColor: ["#d8dee9"]
+  authorColors:
+    "*": "#a7aebd"

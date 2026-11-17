@@ -1,0 +1,17 @@
+# Space Dusk — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#ff79c6", bold]
+    inactiveBorderColor: ["#4d4f58"]
+    searchingActiveBorderColor: ["#ff79c6", bold]
+    optionsTextColor: ["#8be9fd"]
+    selectedLineBgColor: ["#3d3f49"]
+    inactiveViewSelectedLineBgColor: ["#32343f"]
+    cherryPickedCommitFgColor: ["#ff79c6"]
+    cherryPickedCommitBgColor: ["#3d3f49"]
+    markedBaseCommitFgColor: ["#8be9fd"]
+    markedBaseCommitBgColor: ["#3d3f49"]
+    unstagedChangesColor: ["#ff5555"]
+    defaultFgColor: ["#f8f8f2"]
+  authorColors:
+    "*": "#c4c9d7"

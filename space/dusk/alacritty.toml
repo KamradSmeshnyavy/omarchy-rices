@@ -1,0 +1,44 @@
+# Space Dusk — alacritty
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "#282a36"
+cursor = "#ff79c6"
+
+[colors.vi_mode_cursor]
+text = "#282a36"
+cursor = "#8be9fd"
+
+[colors.search.matches]
+foreground = "#282a36"
+background = "#ff79c6"
+
+[colors.search.focused_match]
+foreground = "#282a36"
+background = "#ff79c6"
+
+[colors.selection]
+text = "#f8f8f2"
+background = "#64405e"
+
+[colors.normal]
+black = "#282a36"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#8be9fd"
+magenta = "#bd93f9"
+cyan = "#ff79c6"
+white = "#f8f8f2"
+
+[colors.bright]
+black = "#6272a4"
+red = "#ff79c6"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#8be9fd"
+magenta = "#8be9fd"
+cyan = "#ff79c6"
+white = "#f8f8f2"

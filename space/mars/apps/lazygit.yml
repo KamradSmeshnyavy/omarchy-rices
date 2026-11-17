@@ -1,0 +1,17 @@
+# Space Mars — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#fb4934", bold]
+    inactiveBorderColor: ["#4b4841"]
+    searchingActiveBorderColor: ["#8ec07c", bold]
+    optionsTextColor: ["#83a598"]
+    selectedLineBgColor: ["#3c3a36"]
+    inactiveViewSelectedLineBgColor: ["#32312f"]
+    cherryPickedCommitFgColor: ["#fb5440"]
+    cherryPickedCommitBgColor: ["#3c3a36"]
+    markedBaseCommitFgColor: ["#83a598"]
+    markedBaseCommitBgColor: ["#3c3a36"]
+    unstagedChangesColor: ["#fb5440"]
+    defaultFgColor: ["#ebdbb2"]
+  authorColors:
+    "*": "#bcaf91"

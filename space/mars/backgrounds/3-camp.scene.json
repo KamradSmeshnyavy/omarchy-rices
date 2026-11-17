@@ -1,0 +1,30 @@
+{
+ "scene": "terrain",
+ "seed": 802,
+ "workspace": 6,
+ "land": {
+  "atlas": false,
+  "bases": 1,
+  "comets": 3,
+  "dusk": 0.6,
+  "fleet": 0.4,
+  "flora": 0,
+  "galaxy": 0.7,
+  "galaxyTilt": 40,
+  "grass": 0.3,
+  "haze": 1,
+  "height": 0.5,
+  "relief": 1,
+  "rocks": 2,
+  "ships": 0.7,
+  "snow": 0,
+  "starSize": 0.5,
+  "stars": 2
+ },
+ "colors": {
+  "bg": "#282828",
+  "accent": "#fb4934",
+  "fg": "#ebdbb2",
+  "tone": "#83a598"
+ }
+}

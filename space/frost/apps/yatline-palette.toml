@@ -1,0 +1,12 @@
+# Space Frost — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#7dcfff"
+magenta = "#7dcfff"
+red = "#f7768e"
+yellow = "#7dcfff"
+green = "#9ece6a"
+cyan = "#9ba5cf"
+blue = "#7aa2f7"
+foreground = "#c0caf5"
+background = "#24283b"
+dark_background = "#2c3044"
+lighter_background = "#34384e"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # omarchy-rices: Omarchy themes of the rices (Vitreus, Glyph, yami, Bruteon, Cozytile, Rumda, surface, Unit-3,
-# DOT-MATRIX) and the dynamic theme from the wallpaper (omarchy-rice-dynamic).
+# Space, DOT-MATRIX) and the dynamic theme from the wallpaper (omarchy-rice-dynamic).
 #
 #   bash install.sh             build the themes (downloads the rices' original wallpapers), link them, link the script
 #   bash install.sh --no-build  only the links (themes as they are in the repo)
@@ -15,7 +15,7 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 themes="$HOME/.config/omarchy/themes"
 bin="$HOME/.local/bin"
-rices=(vitreus unit3 yami bruteon cozytile rumda surface nothing)
+rices=(vitreus unit3 space yami bruteon cozytile rumda surface nothing)
 
 list() {
   [[ -f $here/dot-matrix/colors.toml ]] && printf 'dot-matrix\t%s\n' "$here/dot-matrix"

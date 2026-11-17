@@ -1,0 +1,21 @@
+{
+ "scene": "terrain",
+ "seed": 17,
+ "workspace": 1,
+ "land": {
+  "comets": 3,
+  "dusk": 0.75,
+  "flora": 2,
+  "height": 1,
+  "relief": 0.65,
+  "rocks": 2,
+  "snow": 1,
+  "treeSize": 1.1
+ },
+ "colors": {
+  "bg": "#24283b",
+  "accent": "#7dcfff",
+  "fg": "#c0caf5",
+  "tone": "#7aa2f7"
+ }
+}

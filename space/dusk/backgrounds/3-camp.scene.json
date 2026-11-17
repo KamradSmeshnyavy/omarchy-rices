@@ -1,0 +1,12 @@
+{
+ "scene": "terrain",
+ "seed": 802,
+ "workspace": 6,
+ "land": {},
+ "colors": {
+  "bg": "#282a36",
+  "accent": "#ff79c6",
+  "fg": "#f8f8f2",
+  "tone": "#8be9fd"
+ }
+}

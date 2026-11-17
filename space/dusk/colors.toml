@@ -1,0 +1,39 @@
+# Space Dusk — omarchy-rices/space (по мотивам Space из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#ff79c6"
+cursor = "#ff79c6"
+selection = "#64405e"
+selection_foreground = "#f8f8f2"
+selection_background = "#64405e"
+muted = "#6272a4"
+
+background = "#282a36"
+dark_background = "#32343f"
+darker_background = "#282a36"
+lighter_background = "#3d3f49"
+
+foreground = "#f8f8f2"
+dark_foreground = "#6272a4"
+light_foreground = "#8491b8"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#ff79c6"
+hyprland_inactive_border = "#4d4f58"
+
+red = "#ff5555"
+yellow = "#f1fa8c"
+orange = "#f1fa8c"
+green = "#50fa7b"
+cyan = "#ff79c6"
+blue = "#8be9fd"
+magenta = "#bd93f9"
+brown = "#979c65"
+
+bright_red = "#ff79c6"
+bright_yellow = "#f1fa8c"
+bright_green = "#50fa7b"
+bright_cyan = "#ff79c6"
+bright_blue = "#8be9fd"
+bright_magenta = "#8be9fd"

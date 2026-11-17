@@ -1,0 +1,17 @@
+# Space Frost — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#7dcfff", bold]
+    inactiveBorderColor: ["#40455c"]
+    searchingActiveBorderColor: ["#7dcfff", bold]
+    optionsTextColor: ["#7aa2f7"]
+    selectedLineBgColor: ["#34384e"]
+    inactiveViewSelectedLineBgColor: ["#2c3044"]
+    cherryPickedCommitFgColor: ["#7dcfff"]
+    cherryPickedCommitBgColor: ["#34384e"]
+    markedBaseCommitFgColor: ["#7aa2f7"]
+    markedBaseCommitBgColor: ["#34384e"]
+    unstagedChangesColor: ["#f7768e"]
+    defaultFgColor: ["#c0caf5"]
+  authorColors:
+    "*": "#9ba5cf"
