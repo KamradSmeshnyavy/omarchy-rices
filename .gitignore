@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+# Оригинальные обои исходных райсов (0-original.*, 0r-*): у Cozytile и Rumda нет лицензии, у остальных обои — чужой
+# арт. В репо их нет; install.sh (через build.py → originals.py) скачивает их из исходных репо при установке.
+*/backgrounds/0-original.*
+*/backgrounds/0r-*
+*/*/backgrounds/0-original.*
+*/*/backgrounds/0r-*
+# Генерирует синхронизация браузеров dotfiles (omarchy-darkreader / omarchy-surfingkeys) — не часть тем
+dark-reader.json
+surfingkeys.js

@@ -1,0 +1,20 @@
+omarchy-rices — Omarchy themes of rices and the dynamic theme from the wallpaper
+Copyright (C) 2026 KamradSmeshnyavy. GPL-3.0 (LICENSE).
+
+Colours and looks ported from (palettes and forms re-made here; their own files are not copied unless noted):
+  Vitreus      — github.com/natepayn3/Vitreus (MIT)
+  glyph-rice   — github.com/Nebelung-cloud/glyph-rice (GPL-3.0)
+  yami         — github.com/Trendorin/yami (MIT)
+  Bruteon      — github.com/Darkkal44/Bruteon (GPL-3.0), from its screenshots
+  Unit-3       — github.com/samyns/Unit-3 (MIT)
+  surface-dots — github.com/snes19xx/surface-dots (reuse with credit)
+  Rumda        — github.com/hexonide/rumda (look only)
+  Cozytile     — github.com/Darkkal44/Cozytile (look only)
+
+Original wallpapers of those rices are NOT in this repository: install.sh downloads them from the source repos
+(originals.py, cozytile/build.py), they stay under their authors' terms.
+
+scripts/iris_colors.py — Iris, github.com/Harman1307/iris, MIT, Copyright (c) 2024 (full text in the file); one change
+marked "правка (dotfiles)": the circular mean of a cluster's hue.
+
+nothing/efter/ — templates from the theme catppuccin-mocha-efter (Catppuccin palette, MIT, github.com/catppuccin).
