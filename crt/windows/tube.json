@@ -1,0 +1,44 @@
+{
+ "special": {
+  "background": "#22272e",
+  "foreground": "#adbac7",
+  "cursor": "#adbac7"
+ },
+ "colors": {
+  "color0": "#22272e",
+  "color1": "#f47067",
+  "color2": "#57ab5a",
+  "color3": "#c69026",
+  "color4": "#539bf5",
+  "color5": "#b083f0",
+  "color6": "#76e3ea",
+  "color7": "#909dab",
+  "color8": "#2d333b",
+  "color9": "#ff938a",
+  "color10": "#6bc46d",
+  "color11": "#daaa3f",
+  "color12": "#6cb6ff",
+  "color13": "#dcbdfb",
+  "color14": "#b3f0ff",
+  "color15": "#909dab"
+ },
+ "accent": "#909dab",
+ "title": "Retro CRT Windows",
+ "crt": {
+  "bend": 0,
+  "corners": 0,
+  "glow": 0.7,
+  "grain": 0,
+  "lines": 0.25,
+  "mono": 0,
+  "vignette": 0.6
+ },
+ "filter": {
+  "bright": 0.5,
+  "contrast": 0.8,
+  "levels": 12,
+  "pixel": 1,
+  "tone": "source",
+  "on": true
+ }
+}

@@ -23,5 +23,17 @@
   "color15": "#a8fafa"
  },
  "accent": "#1affff",
- "title": "Retro CRT Cyan"
+ "title": "Retro CRT Cyan",
+ "crt": {
+  "bend": 1,
+  "corners": 0.65,
+  "glow": 0.5,
+  "grain": 0.25,
+  "lines": 0.35,
+  "mono": 0.5,
+  "vignette": 0
+ },
+ "filter": {
+  "on": false
+ }
 }

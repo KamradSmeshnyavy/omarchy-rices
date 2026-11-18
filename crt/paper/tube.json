@@ -23,5 +23,17 @@
   "color15": "#ffffff"
  },
  "accent": "#f0eee0",
- "title": "Retro CRT Paper"
+ "title": "Retro CRT Paper",
+ "crt": {
+  "bend": 1,
+  "corners": 0.65,
+  "glow": 0.5,
+  "grain": 0.25,
+  "lines": 0.35,
+  "mono": 0.5,
+  "vignette": 0
+ },
+ "filter": {
+  "on": false
+ }
 }

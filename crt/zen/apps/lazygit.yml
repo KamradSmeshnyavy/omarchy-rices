@@ -1,0 +1,17 @@
+# Retro CRT Zen — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#6f675f", bold]
+    inactiveBorderColor: ["#2b3133"]
+    searchingActiveBorderColor: ["#a57b6a", bold]
+    optionsTextColor: ["#858887"]
+    selectedLineBgColor: ["#182226"]
+    inactiveViewSelectedLineBgColor: ["#141f24"]
+    cherryPickedCommitFgColor: ["#88817a"]
+    cherryPickedCommitBgColor: ["#182226"]
+    markedBaseCommitFgColor: ["#858887"]
+    markedBaseCommitBgColor: ["#182226"]
+    unstagedChangesColor: ["#898480"]
+    defaultFgColor: ["#c2c5c7"]
+  authorColors:
+    "*": "#a4aaae"

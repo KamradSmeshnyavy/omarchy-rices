@@ -10,12 +10,16 @@
 Дизеринг (dither): bayer · fine · halftone · diffuse · none. pixel — размер «пикселя», levels — уровни,
 contrast / bright — 0..1.
 
-Цвета — из темы: по умолчанию текущей (~/.config/omarchy/current/theme/colors.toml), или --theme <каталог>.
-Настройки по умолчанию — ~/.config/omarchy/crt.json → "filter" (как его settings.json → filter).
+Цвета — из темы: по умолчанию текущей (~/.local/state/omarchy/current/theme/colors.toml), или --theme <каталог>.
+Настройки: его по умолчанию ← профиль темы (tube.json → filter) ← свои (~/.config/omarchy/crt.json → filter).
 
   omarchy-crt-filter <картинка> [-o out.png] [--theme dir] [--tone lines] [--dither bayer] [--pixel 2]
                      [--levels 6] [--contrast 0.5] [--bright 0.4]
-Печатает путь готовой картинки (без -o — кэш ~/.cache/omarchy/crt-wall/<ключ>.png, 60 последних).
+Печатает путь готовой картинки (без -o — кэш ~/.cache/omarchy/crt-wall/<ключ>.png, 60 последних; рядом .src — исходник).
+
+  omarchy-crt-filter --get                       настройки фильтра текущей темы (JSON, on — включён)
+  omarchy-crt-filter --set tone palette … [--apply]  свои настройки для текущей темы; --apply — пересобрать обои
+  omarchy-crt-filter --apply                     пересобрать текущие обои из их исходника
 """
 import argparse
 import hashlib
@@ -29,7 +33,7 @@ import tempfile
 
 CACHE = os.path.expanduser("~/.cache/omarchy/crt-wall")
 SETTINGS = os.path.expanduser("~/.config/omarchy/crt.json")
-CURRENT = os.path.expanduser("~/.config/omarchy/current/theme")
+CURRENT = os.path.expanduser("~/.local/state/omarchy/current/theme")
 DEFAULTS = {"tone": "lines", "dither": "bayer", "pixel": 2, "levels": 6, "contrast": 0.5, "bright": 0.4}
 
 
@@ -54,11 +58,86 @@ def theme_colors(d):
     return c
 
 
-def settings():
+def theme_name():
     try:
-        return {**DEFAULTS, **(json.load(open(SETTINGS)).get("filter") or {})}
+        return open(os.path.expanduser("~/.local/state/omarchy/current/theme.name")).read().strip()
+    except OSError:
+        return ""
+
+
+def load_user():
+    try:
+        return json.load(open(SETTINGS))
     except (OSError, ValueError):
-        return dict(DEFAULTS)
+        return {}
+
+
+def profile(theme):
+    try:
+        return dict(json.load(open(os.path.join(theme, "tube.json"))).get("filter") or {})
+    except (OSError, ValueError):
+        return {}
+
+
+def settings(theme, user=True):
+    """Настройки фильтра: его по умолчанию ← профиль темы (tube.json → filter) ← свои для текущей темы
+    (crt.json → themes.<тема>.filter; пишет --set). Ключ on — фильтр включён (у профилей с обоями — да)."""
+    o = dict(DEFAULTS, on=False)
+    o.update({k: v for k, v in profile(theme).items() if k in o})
+    if user and os.path.realpath(theme) == os.path.realpath(CURRENT):
+        o.update({k: v for k, v in (((load_user().get("themes") or {}).get(theme_name()) or {}).get("filter") or {}).items() if k in o})
+    return o
+
+
+def source_of(path):
+    """Исходник картинки: у кэша фильтра — <out>.src, у обоев темы crt-* — source.json темы; иначе — она сама."""
+    real = os.path.realpath(path)
+    try:
+        return open(real + ".src").read().strip() or real
+    except OSError:
+        pass
+    try:
+        bg = os.path.dirname(real)
+        src = json.load(open(os.path.join(os.path.dirname(bg), "source.json"))).get(os.path.basename(real))
+        if src:
+            return os.path.join(os.path.dirname(bg), src)
+    except (OSError, ValueError):
+        pass
+    return real
+
+
+def apply_current():
+    """Пересобрать текущие обои по настройкам (его wallpaper.sh --apply): фильтр включён — из исходника через фильтр,
+    выключен — сам исходник."""
+    cur = os.path.expanduser("~/.local/state/omarchy/current/background")
+    src = source_of(cur)
+    if not os.path.isfile(src):
+        sys.exit("omarchy-crt-filter: не нашёл исходник текущих обоев")
+    o = settings(CURRENT)
+    out = filtered(src, CURRENT, o) if o["on"] else src
+    if os.path.realpath(out) != os.path.realpath(cur):
+        subprocess.run(["omarchy-theme-bg-set", out])
+    print(out)
+
+
+def filtered(src, theme, o, out=None):
+    col = theme_colors(theme)
+    keep = out
+    if not out:
+        key = json.dumps([os.path.realpath(src), os.stat(src).st_mtime, col, {k: o[k] for k in DEFAULTS}], sort_keys=True)
+        out = os.path.join(CACHE, hashlib.md5(key.encode()).hexdigest()[:16] + ".png")
+    if not os.path.exists(out) or keep:
+        render(src, out, col, o)
+        if not keep:
+            with open(out + ".src", "w") as f:
+                f.write(os.path.realpath(src))
+            old = sorted((os.path.join(CACHE, f) for f in os.listdir(CACHE) if f.endswith(".png")),
+                         key=os.path.getmtime, reverse=True)[60:]
+            for f in old:
+                os.unlink(f)
+                if os.path.exists(f + ".src"):
+                    os.unlink(f + ".src")
+    return out
 
 
 def render(src, out, col, o):
@@ -104,10 +183,36 @@ def render(src, out, col, o):
 
 
 def main():
+    if sys.argv[1:2] == ["--get"]:
+        print(json.dumps(settings(CURRENT)))
+        return
+    if sys.argv[1:2] == ["--set"]:
+        # --set k v … [--apply]: свои настройки фильтра текущей темы, затем пересобрать обои
+        args = [x for x in sys.argv[2:] if x != "--apply"]
+        u = load_user()
+        f = u.setdefault("themes", {}).setdefault(theme_name(), {}).setdefault("filter", {})
+        for k, v in zip(args[::2], args[1::2]):
+            if k == "on":
+                f[k] = v in ("1", "true", "True")
+            elif k in ("tone", "dither"):
+                f[k] = v
+            elif k in DEFAULTS:
+                f[k] = type(DEFAULTS[k])(float(v))
+        os.makedirs(os.path.dirname(SETTINGS), exist_ok=True)
+        with open(SETTINGS + ".tmp", "w") as fh:
+            json.dump(u, fh, indent=1)
+        os.replace(SETTINGS + ".tmp", SETTINGS)
+        if "--apply" in sys.argv:
+            apply_current()
+        return
+    if sys.argv[1:2] == ["--apply"]:
+        apply_current()
+        return
     ap = argparse.ArgumentParser(description="фильтр обоев Retro CRT")
     ap.add_argument("src")
     ap.add_argument("-o", "--out")
     ap.add_argument("--theme", default=CURRENT)
+    ap.add_argument("--no-settings", action="store_true", help="без своих настроек из crt.json (сборка тем)")
     for k, v in DEFAULTS.items():
         ap.add_argument("--" + k, type=type(v))
     a = ap.parse_args()
@@ -115,23 +220,11 @@ def main():
         sys.exit("omarchy-crt-filter: нужен ImageMagick (magick)")
     if not os.path.isfile(a.src):
         sys.exit(f"omarchy-crt-filter: нет файла {a.src}")
-    o = settings()
+    o = settings(a.theme, not a.no_settings)
     for k in DEFAULTS:
         if getattr(a, k) is not None:
             o[k] = getattr(a, k)
-    col = theme_colors(a.theme)
-    out = a.out
-    if not out:
-        key = json.dumps([os.path.realpath(a.src), os.stat(a.src).st_mtime, col, o], sort_keys=True)
-        out = os.path.join(CACHE, hashlib.md5(key.encode()).hexdigest()[:16] + ".png")
-    if not os.path.exists(out) or a.out:
-        render(a.src, out, col, o)
-        if not a.out:
-            old = sorted((os.path.join(CACHE, f) for f in os.listdir(CACHE) if f.endswith(".png")),
-                         key=os.path.getmtime, reverse=True)[60:]
-            for f in old:
-                os.unlink(f)
-    print(out)
+    print(filtered(a.src, a.theme, o, a.out))
 
 
 if __name__ == "__main__":

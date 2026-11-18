@@ -1,0 +1,5 @@
+# Retro CRT Zen — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0e1a20,bg+:#182226,fg:#79848a,fg+:#c2c5c7
+--color=hl:#6f675f,hl+:#6f675f,info:#5d6b72,prompt:#6f675f
+--color=pointer:#6f675f,marker:#9d7d75,spinner:#858887,header:#a57b6a
+--color=border:#2b3133,label:#c2c5c7,query:#c2c5c7,selected-bg:#2b3133

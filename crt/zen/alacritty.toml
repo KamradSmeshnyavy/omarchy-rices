@@ -1,0 +1,44 @@
+# Retro CRT Zen — alacritty
+[colors.primary]
+background = "#0e1a20"
+foreground = "#c2c5c7"
+
+[colors.cursor]
+text = "#0e1a20"
+cursor = "#6f675f"
+
+[colors.vi_mode_cursor]
+text = "#0e1a20"
+cursor = "#858887"
+
+[colors.search.matches]
+foreground = "#0e1a20"
+background = "#a57b6a"
+
+[colors.search.focused_match]
+foreground = "#0e1a20"
+background = "#6f675f"
+
+[colors.selection]
+text = "#c2c5c7"
+background = "#2b3133"
+
+[colors.normal]
+black = "#0e1a20"
+red = "#534d47"
+green = "#67372a"
+yellow = "#665850"
+blue = "#5d605f"
+magenta = "#6b635c"
+cyan = "#92604b"
+white = "#90979b"
+
+[colors.bright]
+black = "#5d6b72"
+red = "#6f675f"
+green = "#8a4a39"
+yellow = "#88766b"
+blue = "#7d807f"
+magenta = "#8f847b"
+cyan = "#c38065"
+white = "#c2c5c7"

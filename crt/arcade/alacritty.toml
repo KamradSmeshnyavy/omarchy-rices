@@ -1,0 +1,44 @@
+# Retro CRT Arcade — alacritty
+[colors.primary]
+background = "#0c0e1d"
+foreground = "#c2c2c6"
+
+[colors.cursor]
+text = "#0c0e1d"
+cursor = "#525669"
+
+[colors.vi_mode_cursor]
+text = "#0c0e1d"
+cursor = "#857a84"
+
+[colors.search.matches]
+foreground = "#0c0e1d"
+background = "#768092"
+
+[colors.search.focused_match]
+foreground = "#0c0e1d"
+background = "#525669"
+
+[colors.selection]
+text = "#c2c2c6"
+background = "#212434"
+
+[colors.normal]
+black = "#0c0e1d"
+red = "#3d404e"
+green = "#484b5a"
+yellow = "#535768"
+blue = "#635b63"
+magenta = "#5c6377"
+cyan = "#646f84"
+white = "#8f919a"
+
+[colors.bright]
+black = "#5c5e70"
+red = "#525669"
+green = "#616579"
+yellow = "#6f758b"
+blue = "#857a84"
+magenta = "#7b859f"
+cyan = "#8694b1"
+white = "#c2c2c6"

@@ -1,0 +1,5 @@
+# Retro CRT Windows — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#22272e,bg+:#2d333a,fg:#8e9196,fg+:#adbac7
+--color=hl:#909dab,hl+:#909dab,info:#6e7378,prompt:#909dab
+--color=pointer:#909dab,marker:#57ab5a,spinner:#6cb6ff,header:#76e3ea
+--color=border:#434a54,label:#adbac7,query:#adbac7,selected-bg:#434a54

@@ -1,0 +1,17 @@
+# Retro CRT Windows — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#909dab", bold]
+    inactiveBorderColor: ["#434a54"]
+    searchingActiveBorderColor: ["#76e3ea", bold]
+    optionsTextColor: ["#6cb6ff"]
+    selectedLineBgColor: ["#2d333a"]
+    inactiveViewSelectedLineBgColor: ["#292e36"]
+    cherryPickedCommitFgColor: ["#909dab"]
+    cherryPickedCommitBgColor: ["#2d333a"]
+    markedBaseCommitFgColor: ["#6cb6ff"]
+    markedBaseCommitBgColor: ["#2d333a"]
+    unstagedChangesColor: ["#f47067"]
+    defaultFgColor: ["#adbac7"]
+  authorColors:
+    "*": "#87929d"

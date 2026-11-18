@@ -1,0 +1,5 @@
+# Retro CRT Arcade — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0c0e1d,bg+:#131525,fg:#787a89,fg+:#c2c2c6
+--color=hl:#525669,hl+:#525669,info:#5c5e70,prompt:#525669
+--color=pointer:#525669,marker:#797b86,spinner:#857a84,header:#768092
+--color=border:#212434,label:#c2c2c6,query:#c2c2c6,selected-bg:#212434

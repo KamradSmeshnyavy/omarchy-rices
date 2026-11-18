@@ -1,0 +1,39 @@
+# Retro CRT Zen — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#6f675f"
+cursor = "#6f675f"
+selection = "#2b3133"
+selection_foreground = "#c2c5c7"
+selection_background = "#2b3133"
+muted = "#5d6b72"
+
+background = "#0e1a20"
+dark_background = "#141f24"
+darker_background = "#0e1a20"
+lighter_background = "#182226"
+
+foreground = "#c2c5c7"
+dark_foreground = "#5d6b72"
+light_foreground = "#79848a"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#6f675f"
+hyprland_inactive_border = "#2b3133"
+
+red = "#534d47"
+yellow = "#665850"
+orange = "#8f7e74"
+green = "#67372a"
+cyan = "#92604b"
+blue = "#5d605f"
+magenta = "#6b635c"
+brown = "#55514e"
+
+bright_red = "#6f675f"
+bright_yellow = "#88766b"
+bright_green = "#8a4a39"
+bright_cyan = "#c38065"
+bright_blue = "#7d807f"
+bright_magenta = "#8f847b"

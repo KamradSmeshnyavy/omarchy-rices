@@ -1,0 +1,17 @@
+# Retro CRT Car — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#8ec07c", bold]
+    inactiveBorderColor: ["#475641"]
+    searchingActiveBorderColor: ["#8ec07c", bold]
+    optionsTextColor: ["#83a598"]
+    selectedLineBgColor: ["#323730"]
+    inactiveViewSelectedLineBgColor: ["#2e312d"]
+    cherryPickedCommitFgColor: ["#8ec07c"]
+    cherryPickedCommitBgColor: ["#323730"]
+    markedBaseCommitFgColor: ["#83a598"]
+    markedBaseCommitBgColor: ["#323730"]
+    unstagedChangesColor: ["#fb5440"]
+    defaultFgColor: ["#ebdbb2"]
+  authorColors:
+    "*": "#d0c19f"

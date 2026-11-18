@@ -17,7 +17,7 @@
 | **surface** | тёмная, светлая (+ цветные) | [snes19xx/surface-dots](https://github.com/snes19xx/surface-dots) (с указанием автора) |
 | **Unit-3** | тёмная, Бумага | [samyns/Unit-3](https://github.com/samyns/Unit-3) (MIT) |
 | **Space** | Mars, Atlas, Frost, Dusk | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
-| **Retro CRT** | Phosphor, Amber, Cyan, Paper | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
+| **Retro CRT** | Phosphor, Amber, Cyan, Paper, Car, Arcade, Wallpaper, Windows, Zen | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
 | **DOT-MATRIX** | DOT-MATRIX | свой |
 
 Палитры и формы сделаны здесь заново, каждую тему генерирует `build.py` её райса поверх `nothing/build.py`.

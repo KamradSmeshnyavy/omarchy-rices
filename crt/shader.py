@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """omarchy-crt-shader — ЭЛТ-шейдер райса Retro CRT под текущую тему. Порт Retro/base/crt.lua + crt.frag из
 github.com/elifouts/Dotfiles (GPL-3.0, Eli Fouts): его шейдер, в который подставлены #define — цвет трубки (акцент
-темы) и ручки из ~/.config/omarchy/crt.json → "crt".
+темы) и ручки: профиль темы (tube.json → crt, у тем crt-* — его сохранённые профили) и свои для темы
+(~/.config/omarchy/crt.json → themes.<тема>, пишет `set`).
 
 Готовый шейдер пишется в ~/.config/omarchy/customizer/shaders/retro-crt.frag — Customizer (scripts/crt-toggle.sh,
 Super+Alt+C) находит его по имени retro-crt раньше копии в плагине. Если шейдер сейчас включён — применяется заново.
 
   omarchy-crt-shader                      собрать под текущую тему (хук theme-set)
-  omarchy-crt-shader set lines 0.5 …      поменять ручки (bend corners glow grain lines mono vignette) и собрать
+  omarchy-crt-shader set lines 0.5 …      поменять ручки текущей темы (bend corners glow grain lines mono vignette)
+  omarchy-crt-shader reset                вернуть ручки профиля темы
   omarchy-crt-shader get                  ручки JSON-ом
 """
 import json
@@ -18,7 +20,7 @@ import sys
 
 HERE = os.path.dirname(os.path.realpath(__file__))
 SETTINGS = os.path.expanduser("~/.config/omarchy/crt.json")
-THEME = os.path.expanduser("~/.config/omarchy/current/theme")
+THEME = os.path.expanduser("~/.local/state/omarchy/current/theme")
 OUT = os.path.expanduser("~/.config/omarchy/customizer/shaders/retro-crt.frag")
 STATE = os.path.join(os.environ.get("XDG_STATE_HOME", os.path.expanduser("~/.local/state")), "hypr/screen-shader")
 # его Retro/tweaks/default-look.json → desktop.crt
@@ -32,8 +34,22 @@ def load():
         return {}
 
 
+def theme_name():
+    try:
+        return open(os.path.expanduser("~/.local/state/omarchy/current/theme.name")).read().strip()
+    except OSError:
+        return ""
+
+
 def knobs():
-    return {**DEFAULTS, **(load().get("crt") or {})}
+    """Ручки: его по умолчанию ← профиль темы (tube.json → crt) ← свои для этой темы (crt.json → themes.<тема>)."""
+    c = dict(DEFAULTS)
+    try:
+        c.update({k: v for k, v in (json.load(open(os.path.join(THEME, "tube.json"))).get("crt") or {}).items() if k in DEFAULTS})
+    except (OSError, ValueError):
+        pass
+    c.update({k: v for k, v in ((load().get("themes") or {}).get(theme_name()) or {}).items() if k in DEFAULTS})
+    return c
 
 
 def tint():
@@ -95,13 +111,20 @@ def main(a):
         return
     if a[:1] == ["set"]:
         s = load()
-        c = dict(s.get("crt") or {})
+        th = s.setdefault("themes", {})
+        c = dict(th.get(theme_name()) or {})
         for k, v in zip(a[1::2], a[2::2]):
             if k not in DEFAULTS:
                 sys.exit(f"omarchy-crt-shader: нет ручки {k} (есть: {' '.join(DEFAULTS)})")
             c[k] = float(v)
-        s["crt"] = c
+        th[theme_name()] = c
         os.makedirs(os.path.dirname(SETTINGS), exist_ok=True)
+        with open(SETTINGS + ".tmp", "w") as f:
+            json.dump(s, f, indent=1)
+        os.replace(SETTINGS + ".tmp", SETTINGS)
+    if a[:1] == ["reset"]:
+        s = load()
+        (s.get("themes") or {}).pop(theme_name(), None)
         with open(SETTINGS + ".tmp", "w") as f:
             json.dump(s, f, indent=1)
         os.replace(SETTINGS + ".tmp", SETTINGS)

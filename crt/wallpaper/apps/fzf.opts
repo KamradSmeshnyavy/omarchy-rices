@@ -1,0 +1,5 @@
+# Retro CRT Wallpaper — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0f0f23,bg+:#18192e,fg:#828292,fg+:#c3c3c8
+--color=hl:#6b7390,hl+:#6b7390,info:#68687c,prompt:#6b7390
+--color=pointer:#6b7390,marker:#947380,spinner:#9f93b2,header:#7783a3
+--color=border:#2b2d44,label:#c3c3c8,query:#c3c3c8,selected-bg:#2b2d44

@@ -1,0 +1,17 @@
+# Retro CRT Arcade — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#525669", bold]
+    inactiveBorderColor: ["#212434"]
+    searchingActiveBorderColor: ["#768092", bold]
+    optionsTextColor: ["#857a84"]
+    selectedLineBgColor: ["#131525"]
+    inactiveViewSelectedLineBgColor: ["#101222"]
+    cherryPickedCommitFgColor: ["#787b8a"]
+    cherryPickedCommitBgColor: ["#131525"]
+    markedBaseCommitFgColor: ["#857a84"]
+    markedBaseCommitBgColor: ["#131525"]
+    unstagedChangesColor: ["#7a7b85"]
+    defaultFgColor: ["#c2c2c6"]
+  authorColors:
+    "*": "#a3a4ac"

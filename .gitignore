@@ -9,3 +9,5 @@ __pycache__/
 # Генерирует синхронизация браузеров dotfiles (omarchy-darkreader / omarchy-surfingkeys) — не часть тем
 dark-reader.json
 surfingkeys.js
+# Исходники обоев Retro CRT (его библиотека elifouts/wallpapers, без лицензии) — для пересборки фильтром
+crt/*/source/

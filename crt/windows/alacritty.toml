@@ -1,0 +1,44 @@
+# Retro CRT Windows — alacritty
+[colors.primary]
+background = "#22272e"
+foreground = "#adbac7"
+
+[colors.cursor]
+text = "#22272e"
+cursor = "#909dab"
+
+[colors.vi_mode_cursor]
+text = "#22272e"
+cursor = "#6cb6ff"
+
+[colors.search.matches]
+foreground = "#22272e"
+background = "#76e3ea"
+
+[colors.search.focused_match]
+foreground = "#22272e"
+background = "#909dab"
+
+[colors.selection]
+text = "#adbac7"
+background = "#434a54"
+
+[colors.normal]
+black = "#22272e"
+red = "#f47067"
+green = "#57ab5a"
+yellow = "#c69026"
+blue = "#539bf5"
+magenta = "#b083f0"
+cyan = "#76e3ea"
+white = "#909dab"
+
+[colors.bright]
+black = "#2d333b"
+red = "#ff938a"
+green = "#6bc46d"
+yellow = "#daaa3f"
+blue = "#6cb6ff"
+magenta = "#dcbdfb"
+cyan = "#b3f0ff"
+white = "#909dab"

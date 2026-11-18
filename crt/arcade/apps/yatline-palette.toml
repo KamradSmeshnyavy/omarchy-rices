@@ -1,0 +1,12 @@
+# Retro CRT Arcade — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#525669"
+magenta = "#787b8a"
+red = "#7a7b85"
+yellow = "#768092"
+green = "#797b86"
+cyan = "#a3a4ac"
+blue = "#857a84"
+foreground = "#c2c2c6"
+background = "#0c0e1d"
+dark_background = "#101222"
+lighter_background = "#131525"

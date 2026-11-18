@@ -1,0 +1,39 @@
+# Retro CRT Wallpaper — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#6b7390"
+cursor = "#6b7390"
+selection = "#2b2d44"
+selection_foreground = "#c3c3c8"
+selection_background = "#2b2d44"
+muted = "#68687c"
+
+background = "#0f0f23"
+dark_background = "#15152a"
+darker_background = "#0f0f23"
+lighter_background = "#18192e"
+
+foreground = "#c3c3c8"
+dark_foreground = "#68687c"
+light_foreground = "#828292"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#6b7390"
+hyprland_inactive_border = "#2b2d44"
+
+red = "#50566c"
+yellow = "#5a637e"
+orange = "#7985a9"
+green = "#7e5766"
+cyan = "#6e7b9d"
+blue = "#776e85"
+magenta = "#a56d7e"
+brown = "#49506d"
+
+bright_red = "#6b7390"
+bright_yellow = "#7985a9"
+bright_green = "#a87489"
+bright_cyan = "#93a5d2"
+bright_blue = "#9f93b2"
+bright_magenta = "#dd92a9"

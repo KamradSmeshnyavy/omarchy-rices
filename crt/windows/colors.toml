@@ -1,0 +1,39 @@
+# Retro CRT Windows — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#909dab"
+cursor = "#909dab"
+selection = "#434a54"
+selection_foreground = "#adbac7"
+selection_background = "#434a54"
+muted = "#6e7378"
+
+background = "#22272e"
+dark_background = "#292e36"
+darker_background = "#22272e"
+lighter_background = "#2d333a"
+
+foreground = "#adbac7"
+dark_foreground = "#6e7378"
+light_foreground = "#8e9196"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#909dab"
+hyprland_inactive_border = "#434a54"
+
+red = "#f47067"
+yellow = "#c69026"
+orange = "#daaa3f"
+green = "#57ab5a"
+cyan = "#76e3ea"
+blue = "#539bf5"
+magenta = "#b083f0"
+brown = "#876f37"
+
+bright_red = "#ff938a"
+bright_yellow = "#daaa3f"
+bright_green = "#6bc46d"
+bright_cyan = "#b3f0ff"
+bright_blue = "#6cb6ff"
+bright_magenta = "#dcbdfb"

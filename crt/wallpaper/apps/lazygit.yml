@@ -1,0 +1,17 @@
+# Retro CRT Wallpaper — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#6b7390", bold]
+    inactiveBorderColor: ["#2b2d44"]
+    searchingActiveBorderColor: ["#7783a3", bold]
+    optionsTextColor: ["#9f93b2"]
+    selectedLineBgColor: ["#18192e"]
+    inactiveViewSelectedLineBgColor: ["#15152a"]
+    cherryPickedCommitFgColor: ["#747b97"]
+    cherryPickedCommitBgColor: ["#18192e"]
+    markedBaseCommitFgColor: ["#9f93b2"]
+    markedBaseCommitBgColor: ["#18192e"]
+    unstagedChangesColor: ["#7e8393"]
+    defaultFgColor: ["#c3c3c8"]
+  authorColors:
+    "*": "#a5a5af"

@@ -10,7 +10,9 @@ Colours and looks ported from (palettes and forms re-made here; their own files 
   Space        — github.com/elifouts/Dotfiles (GPL-3.0), Space style: its palettes; wallpaper stills rendered
                  from its landscape shader
   Retro CRT    — github.com/elifouts/Dotfiles (GPL-3.0), Retro style: its tube schemes, crt/crt.frag (his
-                 crt.frag as is), crt/filter.py and crt/shader.py (ports of his wallpaper.sh and crt.lua)
+                 crt.frag as is), crt/filter.py and crt/shader.py (ports of his wallpaper.sh and crt.lua),
+                 crt/starship.toml (his Retro/starship.toml as is); his library wallpapers
+                 (github.com/elifouts/wallpapers, no licence) are downloaded at build, not in git
   surface-dots — github.com/snes19xx/surface-dots (reuse with credit)
   Rumda        — github.com/hexonide/rumda (look only)
   Cozytile     — github.com/Darkkal44/Cozytile (look only)

@@ -1,0 +1,12 @@
+# Retro CRT Windows — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#909dab"
+magenta = "#909dab"
+red = "#f47067"
+yellow = "#76e3ea"
+green = "#57ab5a"
+cyan = "#87929d"
+blue = "#6cb6ff"
+foreground = "#adbac7"
+background = "#22272e"
+dark_background = "#292e36"
+lighter_background = "#2d333a"

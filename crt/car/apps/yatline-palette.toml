@@ -1,0 +1,12 @@
+# Retro CRT Car — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#8ec07c"
+magenta = "#8ec07c"
+red = "#fb5440"
+yellow = "#8ec07c"
+green = "#b8bb26"
+cyan = "#d0c19f"
+blue = "#83a598"
+foreground = "#ebdbb2"
+background = "#282828"
+dark_background = "#2e312d"
+lighter_background = "#323730"

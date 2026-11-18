@@ -1,0 +1,12 @@
+# Retro CRT Wallpaper — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#6b7390"
+magenta = "#747b97"
+red = "#7e8393"
+yellow = "#7783a3"
+green = "#947380"
+cyan = "#a5a5af"
+blue = "#9f93b2"
+foreground = "#c3c3c8"
+background = "#0f0f23"
+dark_background = "#15152a"
+lighter_background = "#18192e"

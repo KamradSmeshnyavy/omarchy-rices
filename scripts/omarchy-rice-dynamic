@@ -320,6 +320,7 @@ def build(rice, image=None, apply=True, **over):
         if flip:
             seed["mode"] = mode
         mode = seed["mode"]
+        seed.setdefault("image", str(image))  # картинка — генераторам, что считают палитру сами (crt: pywal)
         if s["engine"] == "rice":
             kw = {"flip": True} if flip else {}  # build.py без flip — как раньше
             gen.dynamic(seed, str(tmp), name, base=base, scheme=s["scheme"], **kw)

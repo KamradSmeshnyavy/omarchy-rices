@@ -1,0 +1,12 @@
+# Retro CRT Zen — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#6f675f"
+magenta = "#88817a"
+red = "#898480"
+yellow = "#a57b6a"
+green = "#9d7d75"
+cyan = "#a4aaae"
+blue = "#858887"
+foreground = "#c2c5c7"
+background = "#0e1a20"
+dark_background = "#141f24"
+lighter_background = "#182226"

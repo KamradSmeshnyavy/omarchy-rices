@@ -1,0 +1,39 @@
+# Retro CRT Arcade — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#525669"
+cursor = "#525669"
+selection = "#212434"
+selection_foreground = "#c2c2c6"
+selection_background = "#212434"
+muted = "#5c5e70"
+
+background = "#0c0e1d"
+dark_background = "#101222"
+darker_background = "#0c0e1d"
+lighter_background = "#131525"
+
+foreground = "#c2c2c6"
+dark_foreground = "#5c5e70"
+light_foreground = "#787a89"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#525669"
+hyprland_inactive_border = "#212434"
+
+red = "#3d404e"
+yellow = "#535768"
+orange = "#787d92"
+green = "#484b5a"
+cyan = "#646f84"
+blue = "#635b63"
+magenta = "#5c6377"
+brown = "#474b5d"
+
+bright_red = "#525669"
+bright_yellow = "#6f758b"
+bright_green = "#616579"
+bright_cyan = "#8694b1"
+bright_blue = "#857a84"
+bright_magenta = "#7b859f"

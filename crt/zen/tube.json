@@ -1,0 +1,45 @@
+{
+ "special": {
+  "background": "#0e1a20",
+  "foreground": "#c2c5c7",
+  "cursor": "#c2c5c7"
+ },
+ "colors": {
+  "color0": "#0e1a20",
+  "color1": "#534d47",
+  "color2": "#67372a",
+  "color3": "#665850",
+  "color4": "#5d605f",
+  "color5": "#6b635c",
+  "color6": "#92604b",
+  "color7": "#90979b",
+  "color8": "#5d6b72",
+  "color9": "#6f675f",
+  "color10": "#8a4a39",
+  "color11": "#88766b",
+  "color12": "#7d807f",
+  "color13": "#8f847b",
+  "color14": "#c38065",
+  "color15": "#c2c5c7"
+ },
+ "accent": "#6f675f",
+ "title": "Retro CRT Zen",
+ "crt": {
+  "bend": 1,
+  "corners": 0,
+  "glow": 1.5,
+  "grain": 0,
+  "lines": 0,
+  "mono": 0,
+  "vignette": 0.2
+ },
+ "filter": {
+  "bright": 0.4,
+  "contrast": 0.75,
+  "dither": "bayer",
+  "levels": 5,
+  "pixel": 6,
+  "tone": "palette",
+  "on": true
+ }
+}
