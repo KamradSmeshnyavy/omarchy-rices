@@ -34,4 +34,5 @@ with a fresh landscape: `world.py` (linked by `install.sh` as `omarchy-space-wor
 ```sh
 omarchy-space-world nord 8 844 3   # world nord // cyan, seed 844, panned to workspace 3
 omarchy-space-world --list         # all 54 worlds
+omarchy-space-world --preview nord 8 844   # a 320×200 still for the map card (cached)
 ```

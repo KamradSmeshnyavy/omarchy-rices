@@ -8,7 +8,8 @@ github.com/elifouts/Dotfiles, GPL-3.0, Eli Fouts: посадка на неизв
 с сидом звезды и рядом .scene.json — плагин обоев рисует по нему живую сцену.
 
   omarchy-space-world <тема> <акцент 3..8> <сид> [стол] [--no-apply]
-  omarchy-space-world --list          миры: тема, акцент, цвет акцента (для карты)
+  omarchy-space-world --list          миры: тема, акцент, цвет акцента, палитра (для карты)
+  omarchy-space-world --preview <тема> <акцент> <сид>   снимок пейзажа 320×200 в кэш (путь — в stdout)
 """
 import json
 import os
@@ -28,6 +29,7 @@ NAME = "space-world"
 THEMES_DIR = os.path.expanduser("~/.config/omarchy/themes")
 MARKER = ".space-world.json"
 CURRENT = os.path.expanduser("~/.local/state/omarchy/current/theme.name")
+CACHE = os.path.expanduser("~/.cache/omarchy/space-worlds")
 
 
 def die(msg):
@@ -92,11 +94,37 @@ def apply(image):
     subprocess.run(["omarchy-theme-bg-set", image], check=False)
 
 
+def preview(theme, acc, seed):
+    """Мини-снимок мира для карточки звёздной карты: кэш по (тема, акцент, сид), рисуется один раз."""
+    if theme not in sb.THEMES or not 3 <= acc <= 8:
+        die("нет такого мира")
+    os.makedirs(CACHE, exist_ok=True)
+    jpg = os.path.join(CACHE, f"{theme}-{acc}-{seed}.jpg")
+    if os.path.exists(jpg):
+        return jpg
+    sb.VARIANTS["world"] = {"title": title(theme, acc), "theme": theme, "acc": acc, "land": {}}
+    png = jpg[:-4] + f".{os.getpid()}.png"
+    env = dict(os.environ, QT_QPA_PLATFORM="offscreen", QT_QUICK_BACKEND="rhi", QSG_RHI_BACKEND="opengl",
+               QT_SCALE_FACTOR="1")
+    qml = "/usr/lib/qt6/bin/qml" if os.path.exists("/usr/lib/qt6/bin/qml") else "qml6"
+    subprocess.run([qml, sb.SHOT, "--", json.dumps(sb.scene("world", seed, 1)), png, "320", "200"], env=env,
+                   timeout=60, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    if not os.path.exists(png):
+        die("снимок не получился")
+    from PIL import Image
+    Image.open(png).convert("RGB").save(jpg, quality=88)
+    os.unlink(png)
+    return jpg
+
+
 def main():
     a = [x for x in sys.argv[1:] if not x.startswith("--")]
     if "--list" in sys.argv:
-        print(json.dumps([{"theme": t, "acc": i, "color": c[i], "bg": c[0], "title": title(t, i)}
+        print(json.dumps([{"theme": t, "acc": i, "color": c[i], "bg": c[0], "fg": c[1], "palette": c, "title": title(t, i)}
                           for t, c in sb.THEMES.items() for i in range(3, 9)], ensure_ascii=False))
+        return
+    if "--preview" in sys.argv:
+        print(preview(a[0], int(a[1]), int(a[2])))
         return
     if len(a) < 3:
         die("omarchy-space-world <тема> <акцент 3..8> <сид> [стол] [--no-apply]")

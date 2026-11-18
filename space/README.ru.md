@@ -33,4 +33,5 @@ python3 build.py --reshoot    # перерисовать снимки
 ```sh
 omarchy-space-world nord 8 844 3   # мир nord // cyan, сид 844, панорама на стол 3
 omarchy-space-world --list         # все 54 мира
+omarchy-space-world --preview nord 8 844   # снимок 320×200 для карточки карты (в кэше)
 ```
