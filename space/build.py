@@ -34,7 +34,18 @@ THEMES = {
     "nord": ["#2e3440", "#d8dee9", "#4c566a", "#bf616a", "#a3be8c", "#ebcb8b", "#81a1c1", "#b48ead", "#88c0d0"],
     "tokyonight": ["#24283b", "#c0caf5", "#565f89", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff"],
     "dracula": ["#282a36", "#f8f8f2", "#6272a4", "#ff5555", "#50fa7b", "#f1fa8c", "#8be9fd", "#bd93f9", "#ff79c6"],
+    # остальные миры его World.themes — для диких систем звёздной карты (world.py)
+    "everforest": ["#2d353b", "#d3c6aa", "#475258", "#e67e80", "#a7c080", "#dbbc7f", "#7fbbb3", "#d699b6", "#83c092"],
+    "catppuccin": ["#24273a", "#cad3f5", "#5b6078", "#ed8796", "#a6da95", "#eed49f", "#8aadf4", "#c6a0f6", "#8bd5ca"],
+    "rosepine": ["#191724", "#e0def4", "#524f67", "#eb6f92", "#9ccfd8", "#f6c177", "#31748f", "#c4a7e7", "#ebbcba"],
+    "kanagawa": ["#1f1f28", "#dcd7ba", "#54546d", "#e82424", "#98bb6c", "#e6c384", "#7e9cd8", "#957fb8", "#7aa89f"],
+    "solarized": ["#002b36", "#93a1a1", "#586e75", "#dc322f", "#859900", "#b58900", "#268bd2", "#6c71c4", "#2aa198"],
 }
+# имена как у него (World.themes name, accentNames)
+THEME_NAMES = {"everforest": "everforest", "gruvbox": "gruvbox", "nord": "nord", "catppuccin": "catppuccin",
+               "tokyonight": "tokyo night", "rosepine": "rosé pine", "dracula": "dracula", "kanagawa": "kanagawa",
+               "solarized": "solarized"}
+ACCENT_NAMES = ["", "", "", "red", "green", "yellow", "blue", "purple", "cyan"]
 
 # земля — его Space/tweaks/saved/desktop/<Мир>.json (space.land); пусто — значения по умолчанию (Schema.js LAND)
 VARIANTS = {

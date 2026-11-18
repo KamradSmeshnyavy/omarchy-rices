@@ -22,3 +22,16 @@ python3 build.py              # all
 python3 build.py mars frost   # only these
 python3 build.py --reshoot    # render the stills again
 ```
+
+## Wild worlds
+
+The star map of the Space rice (workspace overview, Super + `) shows uncharted systems around you, each with a world:
+one of his nine palettes (everforest, gruvbox, nord, catppuccin, tokyo night, rosé pine, dracula, kanagawa, solarized)
+and an accent from it. Landing on one takes a free workspace at that star and recolours the desktop into that world
+with a fresh landscape: `world.py` (linked by `install.sh` as `omarchy-space-world`) builds
+`~/.config/omarchy/themes/space-world` and a still of the landscape with the star's seed, then applies it.
+
+```sh
+omarchy-space-world nord 8 844 3   # world nord // cyan, seed 844, panned to workspace 3
+omarchy-space-world --list         # all 54 worlds
+```

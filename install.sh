@@ -7,7 +7,8 @@
 #   bash install.sh --list      print "theme-name<TAB>path" of every theme and exit
 #
 # Links: ~/.config/omarchy/themes/<rice>-<variant> → <repo>/<rice>/<variant> (DOT-MATRIX: dot-matrix),
-#        ~/.local/bin/omarchy-rice-dynamic. A path that exists and is not a link is never touched.
+#        ~/.local/bin/omarchy-rice-dynamic, ~/.local/bin/omarchy-space-world (wild worlds of the Space star map).
+#        A path that exists and is not a link is never touched.
 # The Customizer (github.com/KamradSmeshnyavy/omarchy-customizer) shows the rices and the Dynamic tab;
 # the wallpaper plugin (omarchy-wallpaper-fx) recolours the dynamic theme on every wallpaper change.
 set -euo pipefail
@@ -69,5 +70,6 @@ while IFS=$'\t' read -r name path; do
   n=$((n + 1))
 done < <(list)
 link "$here/scripts/omarchy-rice-dynamic" "$bin/omarchy-rice-dynamic"
-echo "Done: $n themes in $themes, omarchy-rice-dynamic in $bin."
+link "$here/space/world.py" "$bin/omarchy-space-world"
+echo "Done: $n themes in $themes, omarchy-rice-dynamic and omarchy-space-world in $bin."
 case ":$PATH:" in *":$bin:"*) ;; *) echo "• add $bin to PATH" >&2 ;; esac

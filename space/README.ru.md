@@ -21,3 +21,16 @@ python3 build.py              # все
 python3 build.py mars frost   # выбранные
 python3 build.py --reshoot    # перерисовать снимки
 ```
+
+## Дикие миры
+
+Звёздная карта райса Space (обзор столов, Super + `) показывает вокруг неизведанные системы, у каждой свой мир — одна
+из его девяти палитр (everforest, gruvbox, nord, catppuccin, tokyo night, rosé pine, dracula, kanagawa, solarized) и
+акцент из неё. Посадка на такую звезду занимает свободный стол на её месте и перекрашивает рабочий стол в этот мир с
+новым пейзажем: `world.py` (`install.sh` ставит его как `omarchy-space-world`) собирает
+`~/.config/omarchy/themes/space-world` и снимок пейзажа с сидом звезды, потом применяет тему.
+
+```sh
+omarchy-space-world nord 8 844 3   # мир nord // cyan, сид 844, панорама на стол 3
+omarchy-space-world --list         # все 54 мира
+```
