@@ -95,9 +95,17 @@ def wal_palette(src):
     c = pals.get(key)
     if not c:
         t = cb.pywal(src)
+        # без pywal: его картинки профилей — палитры, посчитанные pywal16 заранее (build.py TUBES wal-*);
+        # остальные — первый шаг pywal (картинка, сведённая к 16 цветам) с его поправками, приблизительно
+        stem = os.path.splitext(os.path.basename(src))[0]
+        if not t and ("wal-" + stem) in cb.TUBES:
+            t = cb.TUBES["wal-" + stem]
         if not t:
-            return None
-        c = [t["colors"][f"color{i}"] for i in range(16)]
+            c = quantize(src)
+            if not c:
+                return None
+        else:
+            c = [t["colors"][f"color{i}"] for i in range(16)]
         pals[key] = c
         os.makedirs(os.path.dirname(PALS), exist_ok=True)
         with open(PALS + ".tmp", "w") as f:
@@ -105,6 +113,32 @@ def wal_palette(src):
         os.replace(PALS + ".tmp", PALS)
     return {"special": {"background": c[0], "foreground": c[15], "cursor": c[15]},
             "colors": {f"color{i}": c[i] for i in range(16)}}
+
+
+def quantize(src):
+    """Как бэкенд wal у pywal: -resize 25% -colors 16 -unique-colors, затем его adjust (фон темнее, 7/15 — светлее)."""
+    import re
+    r = subprocess.run(["magick", src + "[0]", "-resize", "25%", "-colors", "16", "-unique-colors", "txt:-"],
+                       capture_output=True, text=True)
+    cols = re.findall(r"#[0-9A-Fa-f]{6}", r.stdout)
+    if len(cols) < 8:
+        return None
+    while len(cols) < 16:
+        cols += cols
+    cols = [x.lower() for x in cols[:16]]
+    # pywal: raw = cols[:1] + cols[8:16] + cols[8:-1] — тёмный фон, дальше светлая половина дважды
+    raw = cols[:1] + cols[8:16] + cols[8:-1]
+
+    def rgb(h):
+        return [int(h[i:i + 2], 16) for i in (1, 3, 5)]
+
+    def hx(v):
+        return "#" + "".join(f"{max(0, min(255, round(x))):02x}" for x in v)
+    raw[0] = hx([x * 0.6 for x in rgb(raw[0])])                       # darken 0.40
+    raw[7] = hx([(a + b) / 2 for a, b in zip(rgb(raw[7]), rgb("#eeeeee"))])
+    raw[8] = hx([x * 0.7 for x in rgb(raw[7])])
+    raw[15] = hx([(a + b) / 2 for a, b in zip(rgb(raw[15]), rgb("#eeeeee"))])
+    return raw[:16]
 
 
 def scheme_of(cid, src):
