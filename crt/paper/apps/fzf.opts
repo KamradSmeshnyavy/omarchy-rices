@@ -1,0 +1,5 @@
+# Retro CRT Paper — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#000000,bg+:#181816,fg:#7a7a73,fg+:#c9c7b8
+--color=hl:#f0eee0,hl+:#f0eee0,info:#5f5e56,prompt:#f0eee0
+--color=pointer:#f0eee0,marker:#7e7d69,spinner:#848c73,header:#757b65
+--color=border:#484743,label:#c9c7b8,query:#c9c7b8,selected-bg:#484743

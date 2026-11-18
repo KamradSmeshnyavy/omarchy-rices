@@ -1,0 +1,39 @@
+# Retro CRT Phosphor — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#1aff53"
+cursor = "#1aff53"
+selection = "#084c19"
+selection_foreground = "#5ae27c"
+selection_background = "#084c19"
+muted = "#406b4b"
+
+background = "#000000"
+dark_background = "#020f05"
+darker_background = "#000000"
+lighter_background = "#031a08"
+
+foreground = "#5ae27c"
+dark_foreground = "#406b4b"
+light_foreground = "#60846a"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#1aff53"
+hyprland_inactive_border = "#084c19"
+
+red = "#14cb0b"
+yellow = "#0ce96b"
+orange = "#52ff9c"
+green = "#00c230"
+cyan = "#16ca79"
+blue = "#1a9364"
+magenta = "#14b820"
+brown = "#2d8c56"
+
+bright_red = "#1aff53"
+bright_yellow = "#52ff9c"
+bright_green = "#00ff03"
+bright_cyan = "#47f5a7"
+bright_blue = "#19e696"
+bright_magenta = "#34f441"

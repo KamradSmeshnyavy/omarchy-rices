@@ -1,0 +1,17 @@
+# Retro CRT Paper — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#f0eee0", bold]
+    inactiveBorderColor: ["#484743"]
+    searchingActiveBorderColor: ["#757b65", bold]
+    optionsTextColor: ["#848c73"]
+    selectedLineBgColor: ["#181816"]
+    inactiveViewSelectedLineBgColor: ["#0e0e0d"]
+    cherryPickedCommitFgColor: ["#f0eee0"]
+    cherryPickedCommitBgColor: ["#181816"]
+    markedBaseCommitFgColor: ["#848c73"]
+    markedBaseCommitBgColor: ["#181816"]
+    unstagedChangesColor: ["#7f786a"]
+    defaultFgColor: ["#c9c7b8"]
+  authorColors:
+    "*": "#a3a194"

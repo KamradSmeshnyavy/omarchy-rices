@@ -1,0 +1,44 @@
+# Retro CRT Cyan — alacritty
+[colors.primary]
+background = "#000000"
+foreground = "#5ae2e2"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#1affff"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#199ce6"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#1694ca"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#1affff"
+
+[colors.selection]
+text = "#5ae2e2"
+background = "#084c4c"
+
+[colors.normal]
+black = "#000000"
+red = "#0bcb92"
+green = "#00c2c2"
+yellow = "#0cc1e9"
+blue = "#1a6893"
+magenta = "#14b89a"
+cyan = "#1694ca"
+white = "#5ae2e2"
+
+[colors.bright]
+black = "#194d4d"
+red = "#1affff"
+green = "#00ffc2"
+yellow = "#52e0ff"
+blue = "#199ce6"
+magenta = "#34f4d2"
+cyan = "#47c1f5"
+white = "#a8fafa"

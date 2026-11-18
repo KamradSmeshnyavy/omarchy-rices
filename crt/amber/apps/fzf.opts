@@ -1,0 +1,5 @@
+# Retro CRT Amber — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#000000,bg+:#1a1103,fg:#847760,fg+:#e2b05a
+--color=hl:#ffaa1a,hl+:#ffaa1a,info:#6b5b40,prompt:#ffaa1a
+--color=pointer:#ffaa1a,marker:#c27a00,spinner:#e6e319,header:#cabd16
+--color=border:#4c3308,label:#e2b05a,query:#e2b05a,selected-bg:#4c3308

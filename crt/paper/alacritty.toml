@@ -1,0 +1,44 @@
+# Retro CRT Paper — alacritty
+[colors.primary]
+background = "#000000"
+foreground = "#c9c7b8"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#f0eee0"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#848c73"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#757b65"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#f0eee0"
+
+[colors.selection]
+text = "#c9c7b8"
+background = "#484743"
+
+[colors.normal]
+black = "#000000"
+red = "#776f60"
+green = "#6d6c55"
+yellow = "#84886d"
+blue = "#595e4f"
+magenta = "#706b5c"
+cyan = "#757b65"
+white = "#c9c7b8"
+
+[colors.bright]
+black = "#4a4940"
+red = "#f0eee0"
+green = "#dcdac9"
+yellow = "#b0b39e"
+blue = "#848c73"
+magenta = "#9f9a88"
+cyan = "#a3a994"
+white = "#ffffff"

@@ -1,0 +1,12 @@
+# Retro CRT Amber — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#ffaa1a"
+magenta = "#ffaa1a"
+red = "#cb4a0b"
+yellow = "#cabd16"
+green = "#c27a00"
+cyan = "#b58d46"
+blue = "#e6e319"
+foreground = "#e2b05a"
+background = "#000000"
+dark_background = "#0f0a02"
+lighter_background = "#1a1103"

@@ -1,0 +1,12 @@
+# Retro CRT Phosphor — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#1aff53"
+magenta = "#1aff53"
+red = "#14cb0b"
+yellow = "#16ca79"
+green = "#00c230"
+cyan = "#46b562"
+blue = "#19e696"
+foreground = "#5ae27c"
+background = "#000000"
+dark_background = "#020f05"
+lighter_background = "#031a08"

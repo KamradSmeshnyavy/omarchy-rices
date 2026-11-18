@@ -1,0 +1,5 @@
+# Retro CRT Phosphor — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#000000,bg+:#031a08,fg:#60846a,fg+:#5ae27c
+--color=hl:#1aff53,hl+:#1aff53,info:#406b4b,prompt:#1aff53
+--color=pointer:#1aff53,marker:#00c230,spinner:#19e696,header:#16ca79
+--color=border:#084c19,label:#5ae27c,query:#5ae27c,selected-bg:#084c19

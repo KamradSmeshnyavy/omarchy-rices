@@ -1,0 +1,5 @@
+# Retro CRT Cyan — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#000000,bg+:#031a1a,fg:#567c7c,fg+:#5ae2e2
+--color=hl:#1affff,hl+:#1affff,info:#346262,prompt:#1affff
+--color=pointer:#1affff,marker:#00c2c2,spinner:#199ce6,header:#1694ca
+--color=border:#084c4c,label:#5ae2e2,query:#5ae2e2,selected-bg:#084c4c

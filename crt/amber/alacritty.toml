@@ -1,0 +1,44 @@
+# Retro CRT Amber — alacritty
+[colors.primary]
+background = "#000000"
+foreground = "#e2b05a"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ffaa1a"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#e6e319"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#cabd16"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#ffaa1a"
+
+[colors.selection]
+text = "#e2b05a"
+background = "#4c3308"
+
+[colors.normal]
+black = "#000000"
+red = "#cb4a0b"
+green = "#c27a00"
+yellow = "#e9bf0c"
+blue = "#93921a"
+magenta = "#b85e14"
+cyan = "#cabd16"
+white = "#e2b05a"
+
+[colors.bright]
+black = "#4d3a19"
+red = "#ffaa1a"
+green = "#ff6300"
+yellow = "#ffde52"
+blue = "#e6e319"
+magenta = "#f48a34"
+cyan = "#f5e947"
+white = "#fadca8"

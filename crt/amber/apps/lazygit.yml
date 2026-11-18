@@ -1,0 +1,17 @@
+# Retro CRT Amber — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#ffaa1a", bold]
+    inactiveBorderColor: ["#4c3308"]
+    searchingActiveBorderColor: ["#cabd16", bold]
+    optionsTextColor: ["#e6e319"]
+    selectedLineBgColor: ["#1a1103"]
+    inactiveViewSelectedLineBgColor: ["#0f0a02"]
+    cherryPickedCommitFgColor: ["#ffaa1a"]
+    cherryPickedCommitBgColor: ["#1a1103"]
+    markedBaseCommitFgColor: ["#e6e319"]
+    markedBaseCommitBgColor: ["#1a1103"]
+    unstagedChangesColor: ["#cb4a0b"]
+    defaultFgColor: ["#e2b05a"]
+  authorColors:
+    "*": "#b58d46"

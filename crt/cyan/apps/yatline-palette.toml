@@ -1,0 +1,12 @@
+# Retro CRT Cyan — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#1affff"
+magenta = "#1affff"
+red = "#0bcb92"
+yellow = "#1694ca"
+green = "#00c2c2"
+cyan = "#46b5b5"
+blue = "#199ce6"
+foreground = "#5ae2e2"
+background = "#000000"
+dark_background = "#020f0f"
+lighter_background = "#031a1a"

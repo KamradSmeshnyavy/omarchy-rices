@@ -1,0 +1,12 @@
+# Retro CRT Paper — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#f0eee0"
+magenta = "#f0eee0"
+red = "#7f786a"
+yellow = "#757b65"
+green = "#7e7d69"
+cyan = "#a3a194"
+blue = "#848c73"
+foreground = "#c9c7b8"
+background = "#000000"
+dark_background = "#0e0e0d"
+lighter_background = "#181816"

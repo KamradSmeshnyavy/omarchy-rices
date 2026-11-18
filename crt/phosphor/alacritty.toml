@@ -1,0 +1,44 @@
+# Retro CRT Phosphor — alacritty
+[colors.primary]
+background = "#000000"
+foreground = "#5ae27c"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#1aff53"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#19e696"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#16ca79"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#1aff53"
+
+[colors.selection]
+text = "#5ae27c"
+background = "#084c19"
+
+[colors.normal]
+black = "#000000"
+red = "#14cb0b"
+green = "#00c230"
+yellow = "#0ce96b"
+blue = "#1a9364"
+magenta = "#14b820"
+cyan = "#16ca79"
+white = "#5ae27c"
+
+[colors.bright]
+black = "#194d26"
+red = "#1aff53"
+green = "#00ff03"
+yellow = "#52ff9c"
+blue = "#19e696"
+magenta = "#34f441"
+cyan = "#47f5a7"
+white = "#a8fabc"

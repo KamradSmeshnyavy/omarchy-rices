@@ -1,0 +1,39 @@
+# Retro CRT Amber — omarchy-rices/crt (по мотивам Retro из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#ffaa1a"
+cursor = "#ffaa1a"
+selection = "#4c3308"
+selection_foreground = "#e2b05a"
+selection_background = "#4c3308"
+muted = "#6b5b40"
+
+background = "#000000"
+dark_background = "#0f0a02"
+darker_background = "#000000"
+lighter_background = "#1a1103"
+
+foreground = "#e2b05a"
+dark_foreground = "#6b5b40"
+light_foreground = "#847760"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#ffaa1a"
+hyprland_inactive_border = "#4c3308"
+
+red = "#cb4a0b"
+yellow = "#e9bf0c"
+orange = "#ffde52"
+green = "#c27a00"
+cyan = "#cabd16"
+blue = "#93921a"
+magenta = "#b85e14"
+brown = "#8c7a2d"
+
+bright_red = "#ffaa1a"
+bright_yellow = "#ffde52"
+bright_green = "#ff6300"
+bright_cyan = "#f5e947"
+bright_blue = "#e6e319"
+bright_magenta = "#f48a34"

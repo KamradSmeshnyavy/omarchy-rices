@@ -1,0 +1,17 @@
+# Retro CRT Cyan — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#1affff", bold]
+    inactiveBorderColor: ["#084c4c"]
+    searchingActiveBorderColor: ["#1694ca", bold]
+    optionsTextColor: ["#199ce6"]
+    selectedLineBgColor: ["#031a1a"]
+    inactiveViewSelectedLineBgColor: ["#020f0f"]
+    cherryPickedCommitFgColor: ["#1affff"]
+    cherryPickedCommitBgColor: ["#031a1a"]
+    markedBaseCommitFgColor: ["#199ce6"]
+    markedBaseCommitBgColor: ["#031a1a"]
+    unstagedChangesColor: ["#0bcb92"]
+    defaultFgColor: ["#5ae2e2"]
+  authorColors:
+    "*": "#46b5b5"

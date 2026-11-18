@@ -1,0 +1,17 @@
+# Retro CRT Phosphor — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#1aff53", bold]
+    inactiveBorderColor: ["#084c19"]
+    searchingActiveBorderColor: ["#16ca79", bold]
+    optionsTextColor: ["#19e696"]
+    selectedLineBgColor: ["#031a08"]
+    inactiveViewSelectedLineBgColor: ["#020f05"]
+    cherryPickedCommitFgColor: ["#1aff53"]
+    cherryPickedCommitBgColor: ["#031a08"]
+    markedBaseCommitFgColor: ["#19e696"]
+    markedBaseCommitBgColor: ["#031a08"]
+    unstagedChangesColor: ["#14cb0b"]
+    defaultFgColor: ["#5ae27c"]
+  authorColors:
+    "*": "#46b562"
