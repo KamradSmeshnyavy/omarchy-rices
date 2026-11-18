@@ -78,3 +78,22 @@ omarchy-crt-shader reset                    # вернуть ручки проф
 Его виджет `term`: настоящий bash на обоях. `omarchy-desk-term` (dotfiles, порт его `desk.sh`) держит прозрачную
 `kitten panel` на фоновом слое там, где стоит виджет стола «Терминал»; приглашение — его `starship.toml` (`READY >`),
 он лежит в каждой теме crt. Стиль Retro CRT включает виджет.
+
+## Цвета, обои и профили — как у него
+
+У его Retro три вещи раздельно; у нас так же:
+
+- **Цвета** — `omarchy-crt-colors` (`colors.py`): трубка, одна из его схем (`schemes/` — его `colorschemes/dark` как
+  есть) или *Wallpaper* (pywal16 по текущим обоям, `wal -i … --cols16`, как в его `color-apply.sh`) и акцент из 12
+  слотов. Собирает тему `crt-live` (руками не править): палитра, перенесённые ручки экрана и фильтра и текущие обои,
+  заново прогнанные фильтром в новые цвета. Страница COLORS панели настроек.
+- **Обои** — вся его библиотека ([elifouts/wallpapers](https://github.com/elifouts/wallpapers), без лицензии, в git
+  нет): `omarchy-crt-library` качает её в `~/Pictures/Wallpapers/elifouts/<папка>/` с его `favorites.txt`;
+  `omarchy-crt-library index` строит миниатюры и pywal-палитры (его `wallpaper-index.py`). Пикер SCREENS (стиль
+  Retro CRT) показывает её по папкам и применяет через `omarchy-crt-colors --wallpaper` — через фильтр, а при цветах
+  *Wallpaper* ещё и перекрашивает систему.
+- **Экран** — ручки шейдера и фильтра (страница SCREEN).
+- **Профили** — его сохранённые профили — пресеты (Phosphor … Zen); во вкладке «Райсы» Customizer у Retro CRT одна
+  запись, профили — на странице PROFILES панели настроек, «save as» сохраняет свой (с состоянием `crt-live`).
+
+pywal16 — AUR `python-pywal16`. Без него цвета *Wallpaper* — трубка phosphor, повёрнутая к оттенку картинки.

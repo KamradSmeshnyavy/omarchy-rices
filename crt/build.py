@@ -140,9 +140,11 @@ def palette(v):
         "property": nb.mix(fg, a[8], 0.3), "special": acc, "constant": a[11], "ansi_yellow": a[3],
         "min_de": 0, "ansi16": a,
     }
-    for role in ("error", "info", "warn", "ok", "keyword", "string", "number", "type", "function", "special",
-                 "constant", "ansi_yellow"):
+    # все роли, что проверяет nothing/palettes.check, — не ниже 4.5 к фону (комментарии — 3): палитры pywal бывают тусклыми
+    from palettes import SYNTAX
+    for role in set(SYNTAX) | {"fg", "dim", "error", "info", "warn", "ok", "special", "ansi_yellow"}:
         p[role] = readable(p[role], bg, 4.5)
+    p["comment"] = readable(p["comment"], bg, 3)
     p["wallpapers"] = lambda pp, d, v=v: walls(v, d)
     return p
 

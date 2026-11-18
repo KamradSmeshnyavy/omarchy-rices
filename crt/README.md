@@ -77,3 +77,23 @@ With `bend` above 0 the screen is redrawn whole on every change (Hyprland `damag
 His `term` widget: a real bash on the wallpaper. `omarchy-desk-term` (dotfiles, a port of his `desk.sh`) keeps a
 transparent `kitten panel` on the background layer where the desktop widget «Terminal» stands; the prompt is his
 `starship.toml` (`READY >`), shipped in every crt theme. The Retro CRT style turns the widget on.
+
+## Colours, wallpapers and profiles — like his
+
+His Retro keeps three things apart; so do we:
+
+- **Colours** — `omarchy-crt-colors` (`colors.py`): a tube, one of his schemes (`schemes/` — his `colorschemes/dark`
+  as is) or *Wallpaper* (pywal16 of the current wallpaper, `wal -i … --cols16` as in his `color-apply.sh`), and an
+  accent from 12 slots. It builds the theme `crt-live` (do not edit it by hand): the palette, the screen and filter
+  knobs carried over, and the current wallpaper filtered again into the new colours. The settings sheet's COLORS page.
+- **Wallpapers** — his whole library ([elifouts/wallpapers](https://github.com/elifouts/wallpapers), no licence, not in
+  git): `omarchy-crt-library` downloads it to `~/Pictures/Wallpapers/elifouts/<folder>/` with his `favorites.txt`;
+  `omarchy-crt-library index` builds thumbnails and pywal palettes (his `wallpaper-index.py`). The picker's SCREENS
+  view (Retro CRT style) shows it by folders and applies with `omarchy-crt-colors --wallpaper` — through the filter,
+  and with *Wallpaper* colours it also recolours the system.
+- **Screen** — CRT and filter knobs (SCREEN page).
+- **Profiles** — his saved profiles are presets (Phosphor … Zen); the Customizer's Rices tab has one Retro CRT entry,
+  the profiles live on the settings sheet's PROFILES page, and «save as» stores your own (with the `crt-live` state).
+
+pywal16: AUR `python-pywal16`. Without it the *Wallpaper* colours fall back to the phosphor tube turned to the
+picture's hue.

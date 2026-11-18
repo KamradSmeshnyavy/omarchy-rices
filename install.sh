@@ -74,5 +74,7 @@ link "$here/scripts/omarchy-rice-dynamic" "$bin/omarchy-rice-dynamic"
 link "$here/space/world.py" "$bin/omarchy-space-world"
 link "$here/crt/filter.py" "$bin/omarchy-crt-filter"
 link "$here/crt/shader.py" "$bin/omarchy-crt-shader"
+link "$here/crt/library.py" "$bin/omarchy-crt-library"
+link "$here/crt/colors.py" "$bin/omarchy-crt-colors"
 echo "Done: $n themes in $themes, omarchy-rice-dynamic, omarchy-space-world, omarchy-crt-filter and omarchy-crt-shader in $bin."
 case ":$PATH:" in *":$bin:"*) ;; *) echo "• add $bin to PATH" >&2 ;; esac
