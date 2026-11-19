@@ -146,6 +146,8 @@ def make(v, out=None, name=None):
     lines[0] = f"# {p['title']} — omarchy-rices/modern (по мотивам Modern из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py)."
     open(f, "w").write("\n".join(lines))
     open(os.path.join(out, "hyprland.lua"), "w").write(hypr_lua(v))
+    import shutil
+    shutil.copyfile(os.path.join(HERE, "starship.toml"), os.path.join(out, "starship.toml"))
 
 
 # omarchy-rice-dynamic: тема из обоев — его pywal (`wal -i … --cols16`), без pywal — квантование как у pywal
