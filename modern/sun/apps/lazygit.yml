@@ -1,0 +1,17 @@
+# Modern Sun — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#b26e4e", bold]
+    inactiveBorderColor: ["#213135"]
+    searchingActiveBorderColor: ["#e5965f", bold]
+    optionsTextColor: ["#aa9473"]
+    selectedLineBgColor: ["#1d2d31"]
+    inactiveViewSelectedLineBgColor: ["#17272b"]
+    cherryPickedCommitFgColor: ["#b77759"]
+    cherryPickedCommitBgColor: ["#1d2d31"]
+    markedBaseCommitFgColor: ["#aa9473"]
+    markedBaseCommitBgColor: ["#1d2d31"]
+    unstagedChangesColor: ["#a5806e"]
+    defaultFgColor: ["#929a9c"]
+  authorColors:
+    "*": "#828d90"

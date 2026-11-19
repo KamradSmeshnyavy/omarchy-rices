@@ -1,0 +1,12 @@
+# Modern Sun — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#b26e4e"
+magenta = "#b77759"
+red = "#a5806e"
+yellow = "#e5965f"
+green = "#479189"
+cyan = "#828d90"
+blue = "#aa9473"
+foreground = "#929a9c"
+background = "#0f2024"
+dark_background = "#17272b"
+lighter_background = "#1d2d31"

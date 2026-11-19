@@ -1,0 +1,35 @@
+{
+ "special": {
+  "background": "#0e1721",
+  "foreground": "#c2c5c7",
+  "cursor": "#c2c5c7"
+ },
+ "colors": {
+  "color0": "#0e1721",
+  "color1": "#243951",
+  "color2": "#3a3958",
+  "color3": "#214b68",
+  "color4": "#3d3e66",
+  "color5": "#4e476f",
+  "color6": "#6f487d",
+  "color7": "#91959b",
+  "color8": "#5d6772",
+  "color9": "#314c6c",
+  "color10": "#4e4d76",
+  "color11": "#2c648b",
+  "color12": "#525389",
+  "color13": "#685f95",
+  "color14": "#9461a7",
+  "color15": "#c2c5c7"
+ },
+ "accent": "#314c6c",
+ "title": "Modern Neon",
+ "roles": {
+  "accent": 9,
+  "accent2": 13,
+  "ok": 10,
+  "caution": 11,
+  "info": 14,
+  "warn": 1
+ }
+}

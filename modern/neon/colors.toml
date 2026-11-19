@@ -1,0 +1,39 @@
+# Modern Neon — omarchy-rices/modern (по мотивам Modern из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#314c6c"
+cursor = "#314c6c"
+selection = "#182738"
+selection_foreground = "#91959b"
+selection_background = "#182738"
+muted = "#5d6772"
+
+background = "#0e1721"
+dark_background = "#161f28"
+darker_background = "#0e1721"
+lighter_background = "#1c252e"
+
+foreground = "#91959b"
+dark_foreground = "#5d6772"
+light_foreground = "#7b8086"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#314c6c"
+hyprland_inactive_border = "#202932"
+
+red = "#243951"
+yellow = "#214b68"
+orange = "#5a86a5"
+green = "#3a3958"
+cyan = "#6f487d"
+blue = "#3d3e66"
+magenta = "#4e476f"
+brown = "#38546a"
+
+bright_red = "#314c6c"
+bright_yellow = "#2c648b"
+bright_green = "#4e4d76"
+bright_cyan = "#9461a7"
+bright_blue = "#525389"
+bright_magenta = "#685f95"

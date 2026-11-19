@@ -1,0 +1,12 @@
+# Modern Gruvbox — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#fe8019"
+magenta = "#fe8019"
+red = "#fb5440"
+yellow = "#8ec07c"
+green = "#b8bb26"
+cyan = "#d0c19f"
+blue = "#83a598"
+foreground = "#ebdbb2"
+background = "#282828"
+dark_background = "#343330"
+lighter_background = "#3d3c37"

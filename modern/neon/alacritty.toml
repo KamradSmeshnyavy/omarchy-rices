@@ -1,0 +1,44 @@
+# Modern Neon — alacritty
+[colors.primary]
+background = "#0e1721"
+foreground = "#91959b"
+
+[colors.cursor]
+text = "#0e1721"
+cursor = "#314c6c"
+
+[colors.vi_mode_cursor]
+text = "#0e1721"
+cursor = "#8081a9"
+
+[colors.search.matches]
+foreground = "#0e1721"
+background = "#a073b1"
+
+[colors.search.focused_match]
+foreground = "#0e1721"
+background = "#314c6c"
+
+[colors.selection]
+text = "#91959b"
+background = "#182738"
+
+[colors.normal]
+black = "#0e1721"
+red = "#243951"
+green = "#3a3958"
+yellow = "#214b68"
+blue = "#3d3e66"
+magenta = "#4e476f"
+cyan = "#6f487d"
+white = "#91959b"
+
+[colors.bright]
+black = "#5d6772"
+red = "#314c6c"
+green = "#4e4d76"
+yellow = "#2c648b"
+blue = "#525389"
+magenta = "#685f95"
+cyan = "#9461a7"
+white = "#c2c5c7"

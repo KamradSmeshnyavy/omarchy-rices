@@ -1,0 +1,35 @@
+{
+ "special": {
+  "background": "#1e1f25",
+  "foreground": "#c6c7c8",
+  "cursor": "#c6c7c8"
+ },
+ "colors": {
+  "color0": "#1e1f25",
+  "color1": "#605e4a",
+  "color2": "#5a6350",
+  "color3": "#6c6c53",
+  "color4": "#787558",
+  "color5": "#7d7b5c",
+  "color6": "#878566",
+  "color7": "#95989f",
+  "color8": "#636779",
+  "color9": "#817e63",
+  "color10": "#79846b",
+  "color11": "#90916f",
+  "color12": "#a09d76",
+  "color13": "#a7a57b",
+  "color14": "#b4b289",
+  "color15": "#c6c7c8"
+ },
+ "accent": "#817e63",
+ "title": "Modern Zen",
+ "roles": {
+  "accent": 9,
+  "accent2": 13,
+  "ok": 10,
+  "caution": 11,
+  "info": 14,
+  "warn": 1
+ }
+}

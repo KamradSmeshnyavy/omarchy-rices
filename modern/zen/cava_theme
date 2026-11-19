@@ -1,0 +1,13 @@
+[color]
+background = '#1e1f25'
+foreground = '#95989f'
+gradient = 1
+gradient_count = 8
+gradient_color_1 = '#8a8b91'
+gradient_color_2 = '#95989f'
+gradient_color_3 = '#868994'
+gradient_color_4 = '#a09d76'
+gradient_color_5 = '#908d75'
+gradient_color_6 = '#a7a57b'
+gradient_color_7 = '#90916f'
+gradient_color_8 = '#817e63'

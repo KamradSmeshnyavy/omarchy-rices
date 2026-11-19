@@ -1,0 +1,44 @@
+# Modern Default — alacritty
+[colors.primary]
+background = "#0f2024"
+foreground = "#929a9c"
+
+[colors.cursor]
+text = "#0f2024"
+cursor = "#b26e4e"
+
+[colors.vi_mode_cursor]
+text = "#0f2024"
+cursor = "#aa9473"
+
+[colors.search.matches]
+foreground = "#0f2024"
+background = "#e5965f"
+
+[colors.search.focused_match]
+foreground = "#0f2024"
+background = "#b26e4e"
+
+[colors.selection]
+text = "#929a9c"
+background = "#403731"
+
+[colors.normal]
+black = "#0f2024"
+red = "#85523a"
+green = "#23625a"
+yellow = "#48675b"
+blue = "#7f6f56"
+magenta = "#bb6b33"
+cyan = "#ab7047"
+white = "#929a9c"
+
+[colors.bright]
+black = "#5e7074"
+red = "#b26e4e"
+green = "#2f8379"
+yellow = "#608a7a"
+blue = "#aa9473"
+magenta = "#fa8f44"
+cyan = "#e5965f"
+white = "#c3c7c8"

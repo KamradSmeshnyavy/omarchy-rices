@@ -1,0 +1,44 @@
+# Modern Zen — alacritty
+[colors.primary]
+background = "#1e1f25"
+foreground = "#95989f"
+
+[colors.cursor]
+text = "#1e1f25"
+cursor = "#817e63"
+
+[colors.vi_mode_cursor]
+text = "#1e1f25"
+cursor = "#a09d76"
+
+[colors.search.matches]
+foreground = "#1e1f25"
+background = "#b4b289"
+
+[colors.search.focused_match]
+foreground = "#1e1f25"
+background = "#817e63"
+
+[colors.selection]
+text = "#95989f"
+background = "#3c3c38"
+
+[colors.normal]
+black = "#1e1f25"
+red = "#605e4a"
+green = "#5a6350"
+yellow = "#6c6c53"
+blue = "#787558"
+magenta = "#7d7b5c"
+cyan = "#878566"
+white = "#95989f"
+
+[colors.bright]
+black = "#636779"
+red = "#817e63"
+green = "#79846b"
+yellow = "#90916f"
+blue = "#a09d76"
+magenta = "#a7a57b"
+cyan = "#b4b289"
+white = "#c6c7c8"

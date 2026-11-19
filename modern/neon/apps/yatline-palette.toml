@@ -1,0 +1,12 @@
+# Modern Neon — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#314c6c"
+magenta = "#718399"
+red = "#7a8695"
+yellow = "#a073b1"
+green = "#8584a0"
+cyan = "#81878f"
+blue = "#8081a9"
+foreground = "#91959b"
+background = "#0e1721"
+dark_background = "#161f28"
+lighter_background = "#1c252e"

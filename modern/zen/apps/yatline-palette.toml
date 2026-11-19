@@ -1,0 +1,12 @@
+# Modern Zen — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#817e63"
+magenta = "#908d75"
+red = "#8a8a7a"
+yellow = "#b4b289"
+green = "#818b74"
+cyan = "#868994"
+blue = "#a09d76"
+foreground = "#95989f"
+background = "#1e1f25"
+dark_background = "#25262c"
+lighter_background = "#2b2c32"

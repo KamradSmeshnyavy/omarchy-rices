@@ -1,0 +1,39 @@
+# Modern Default — omarchy-rices/modern (по мотивам Modern из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#b26e4e"
+cursor = "#b26e4e"
+selection = "#403731"
+selection_foreground = "#929a9c"
+selection_background = "#403731"
+muted = "#5e7074"
+
+background = "#0f2024"
+dark_background = "#17272b"
+darker_background = "#0f2024"
+lighter_background = "#1d2d31"
+
+foreground = "#929a9c"
+dark_foreground = "#5e7074"
+light_foreground = "#838c8f"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#b26e4e"
+hyprland_inactive_border = "#213135"
+
+red = "#85523a"
+yellow = "#48675b"
+orange = "#6a9182"
+green = "#23625a"
+cyan = "#ab7047"
+blue = "#7f6f56"
+magenta = "#bb6b33"
+brown = "#415e58"
+
+bright_red = "#b26e4e"
+bright_yellow = "#608a7a"
+bright_green = "#2f8379"
+bright_cyan = "#e5965f"
+bright_blue = "#aa9473"
+bright_magenta = "#fa8f44"

@@ -1,0 +1,39 @@
+# Modern Gruvbox — omarchy-rices/modern (по мотивам Modern из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#fe8019"
+cursor = "#fe8019"
+selection = "#684224"
+selection_foreground = "#ebdbb2"
+selection_background = "#684224"
+muted = "#928374"
+
+background = "#282828"
+dark_background = "#343330"
+darker_background = "#282828"
+lighter_background = "#3d3c37"
+
+foreground = "#ebdbb2"
+dark_foreground = "#928374"
+light_foreground = "#99917c"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#fe8019"
+hyprland_inactive_border = "#43413b"
+
+red = "#fb4934"
+yellow = "#fabd2f"
+orange = "#fabd2f"
+green = "#b8bb26"
+cyan = "#8ec07c"
+blue = "#83a598"
+magenta = "#d3869b"
+brown = "#9c7a2c"
+
+bright_red = "#fe8019"
+bright_yellow = "#fabd2f"
+bright_green = "#b8bb26"
+bright_cyan = "#8ec07c"
+bright_blue = "#83a598"
+bright_magenta = "#d3869b"

@@ -1,0 +1,35 @@
+{
+ "special": {
+  "background": "#0f2024",
+  "foreground": "#c3c7c8",
+  "cursor": "#c3c7c8"
+ },
+ "colors": {
+  "color0": "#0f2024",
+  "color1": "#85523a",
+  "color2": "#23625a",
+  "color3": "#48675b",
+  "color4": "#7f6f56",
+  "color5": "#bb6b33",
+  "color6": "#ab7047",
+  "color7": "#929a9c",
+  "color8": "#5e7074",
+  "color9": "#b26e4e",
+  "color10": "#2f8379",
+  "color11": "#608a7a",
+  "color12": "#aa9473",
+  "color13": "#fa8f44",
+  "color14": "#e5965f",
+  "color15": "#c3c7c8"
+ },
+ "accent": "#b26e4e",
+ "title": "Modern Default",
+ "roles": {
+  "accent": 9,
+  "accent2": 13,
+  "ok": 10,
+  "caution": 11,
+  "info": 14,
+  "warn": 1
+ }
+}

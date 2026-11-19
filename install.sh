@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # omarchy-rices: Omarchy themes of the rices (Vitreus, Glyph, yami, Bruteon, Cozytile, Rumda, surface, Unit-3,
-# Space, Retro CRT, DOT-MATRIX) and the dynamic theme from the wallpaper (omarchy-rice-dynamic).
+# Space, Retro CRT, Modern, DOT-MATRIX) and the dynamic theme from the wallpaper (omarchy-rice-dynamic).
 #
 #   bash install.sh             build the themes (downloads the rices' original wallpapers), link them, link the script
 #   bash install.sh --no-build  only the links (themes as they are in the repo)
@@ -17,7 +17,7 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 themes="$HOME/.config/omarchy/themes"
 bin="$HOME/.local/bin"
-rices=(vitreus unit3 space crt yami bruteon cozytile rumda surface nothing)
+rices=(vitreus unit3 space crt modern yami bruteon cozytile rumda surface nothing)
 
 list() {
   [[ -f $here/dot-matrix/colors.toml ]] && printf 'dot-matrix\t%s\n' "$here/dot-matrix"
@@ -76,5 +76,6 @@ link "$here/crt/filter.py" "$bin/omarchy-crt-filter"
 link "$here/crt/shader.py" "$bin/omarchy-crt-shader"
 link "$here/crt/library.py" "$bin/omarchy-crt-library"
 link "$here/crt/colors.py" "$bin/omarchy-crt-colors"
+link "$here/modern/colors.py" "$bin/omarchy-modern-colors"
 echo "Done: $n themes in $themes, omarchy-rice-dynamic, omarchy-space-world, omarchy-crt-filter and omarchy-crt-shader in $bin."
 case ":$PATH:" in *":$bin:"*) ;; *) echo "• add $bin to PATH" >&2 ;; esac

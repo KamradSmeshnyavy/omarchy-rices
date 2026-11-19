@@ -1,0 +1,5 @@
+# Modern Default — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0f2024,bg+:#1d2d31,fg:#838c8f,fg+:#929a9c
+--color=hl:#b26e4e,hl+:#b26e4e,info:#5e7074,prompt:#b26e4e
+--color=pointer:#b26e4e,marker:#479189,spinner:#aa9473,header:#e5965f
+--color=border:#213135,label:#929a9c,query:#929a9c,selected-bg:#403731

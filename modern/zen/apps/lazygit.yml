@@ -1,0 +1,17 @@
+# Modern Zen — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#817e63", bold]
+    inactiveBorderColor: ["#2f3036"]
+    searchingActiveBorderColor: ["#b4b289", bold]
+    optionsTextColor: ["#a09d76"]
+    selectedLineBgColor: ["#2b2c32"]
+    inactiveViewSelectedLineBgColor: ["#25262c"]
+    cherryPickedCommitFgColor: ["#908d75"]
+    cherryPickedCommitBgColor: ["#2b2c32"]
+    markedBaseCommitFgColor: ["#a09d76"]
+    markedBaseCommitBgColor: ["#2b2c32"]
+    unstagedChangesColor: ["#8a8a7a"]
+    defaultFgColor: ["#95989f"]
+  authorColors:
+    "*": "#868994"

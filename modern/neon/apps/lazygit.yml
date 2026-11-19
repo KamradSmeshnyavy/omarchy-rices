@@ -1,0 +1,17 @@
+# Modern Neon — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#314c6c", bold]
+    inactiveBorderColor: ["#202932"]
+    searchingActiveBorderColor: ["#a073b1", bold]
+    optionsTextColor: ["#8081a9"]
+    selectedLineBgColor: ["#1c252e"]
+    inactiveViewSelectedLineBgColor: ["#161f28"]
+    cherryPickedCommitFgColor: ["#718399"]
+    cherryPickedCommitBgColor: ["#1c252e"]
+    markedBaseCommitFgColor: ["#8081a9"]
+    markedBaseCommitBgColor: ["#1c252e"]
+    unstagedChangesColor: ["#7a8695"]
+    defaultFgColor: ["#91959b"]
+  authorColors:
+    "*": "#81878f"

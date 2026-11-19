@@ -1,0 +1,5 @@
+# Modern Zen — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#1e1f25,bg+:#2b2c32,fg:#8a8b91,fg+:#95989f
+--color=hl:#817e63,hl+:#817e63,info:#6c7081,prompt:#817e63
+--color=pointer:#817e63,marker:#818b74,spinner:#a09d76,header:#b4b289
+--color=border:#2f3036,label:#95989f,query:#95989f,selected-bg:#3c3c38

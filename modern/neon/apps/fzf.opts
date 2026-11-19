@@ -1,0 +1,5 @@
+# Modern Neon — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0e1721,bg+:#1c252e,fg:#7b8086,fg+:#91959b
+--color=hl:#314c6c,hl+:#314c6c,info:#5d6772,prompt:#314c6c
+--color=pointer:#314c6c,marker:#8584a0,spinner:#8081a9,header:#a073b1
+--color=border:#202932,label:#91959b,query:#91959b,selected-bg:#182738

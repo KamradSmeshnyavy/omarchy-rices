@@ -1,0 +1,5 @@
+# Modern Gruvbox — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#282828,bg+:#3d3c37,fg:#99917c,fg+:#ebdbb2
+--color=hl:#fe8019,hl+:#fe8019,info:#928374,prompt:#fe8019
+--color=pointer:#fe8019,marker:#b8bb26,spinner:#83a598,header:#8ec07c
+--color=border:#43413b,label:#ebdbb2,query:#ebdbb2,selected-bg:#684224

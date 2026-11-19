@@ -1,0 +1,39 @@
+# Modern Zen — omarchy-rices/modern (по мотивам Modern из elifouts/Dotfiles, GPL-3.0; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#817e63"
+cursor = "#817e63"
+selection = "#3c3c38"
+selection_foreground = "#95989f"
+selection_background = "#3c3c38"
+muted = "#6c7081"
+
+background = "#1e1f25"
+dark_background = "#25262c"
+darker_background = "#1e1f25"
+lighter_background = "#2b2c32"
+
+foreground = "#95989f"
+dark_foreground = "#6c7081"
+light_foreground = "#8a8b91"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#817e63"
+hyprland_inactive_border = "#2f3036"
+
+red = "#605e4a"
+yellow = "#6c6c53"
+orange = "#90916f"
+green = "#5a6350"
+cyan = "#878566"
+blue = "#787558"
+magenta = "#7d7b5c"
+brown = "#5d5e4e"
+
+bright_red = "#817e63"
+bright_yellow = "#90916f"
+bright_green = "#79846b"
+bright_cyan = "#b4b289"
+bright_blue = "#a09d76"
+bright_magenta = "#a7a57b"

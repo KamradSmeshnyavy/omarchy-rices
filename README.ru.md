@@ -2,7 +2,7 @@
 
 [🇬🇧 English](README.md)
 
-Темы Omarchy одиннадцати райсов и **динамическая тема из обоев** для каждого из них. Вкладка Customizer **«Райсы»**
+Темы Omarchy двенадцати райсов и **динамическая тема из обоев** для каждого из них. Вкладка Customizer **«Райсы»**
 применяет варианты райсов, вкладка **Dynamic** настраивает динамическую тему.
 
 | Райс | Варианты | По мотивам |
@@ -18,6 +18,7 @@
 | **Unit-3** | тёмная, Бумага | [samyns/Unit-3](https://github.com/samyns/Unit-3) (MIT) |
 | **Space** | Mars, Atlas, Frost, Dusk | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
 | **Retro CRT** | Phosphor, Amber, Cyan, Paper, Car, Arcade, Wallpaper, Windows, Zen | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
+| **Modern** | Default, Sun, Gruvbox, Neon, Zen | [elifouts/Dotfiles](https://github.com/elifouts/Dotfiles) (GPL-3.0) |
 | **DOT-MATRIX** | DOT-MATRIX | свой |
 
 Палитры и формы сделаны здесь заново, каждую тему генерирует `build.py` её райса поверх `nothing/build.py`.
