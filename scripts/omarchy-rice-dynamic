@@ -468,6 +468,10 @@ def wallhaven_search(rice, query, page=1):
         rice_dir(rice)
     q = {"q": query, "purity": "100", "categories": "110", "sorting": "relevance", "atleast": "1920x1080",
          "page": str(page)}
+    # пустой запрос или toplist — топ за месяц, только горизонтальные (умолчания bin/vitreus-wallhaven у Vitreus)
+    if query.strip() in ("", "toplist"):
+        q = {"purity": "100", "categories": "110", "sorting": "toplist", "topRange": "1M", "atleast": "1920x1080",
+             "ratios": "landscape", "page": str(page)}
     data = json.loads(_http(WH_API + urllib.parse.urlencode(q)))["data"]
     d = WH_CACHE / rice
     shutil.rmtree(d, ignore_errors=True)  # каталог наш (кэш), не путь из ввода

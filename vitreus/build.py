@@ -271,6 +271,62 @@ def liquid_walls(t, out_dir):
         im.save(dst, optimize=True)
 
 
+# Обои: у Vitreus своих нет — он берёт их с Wallhaven. В его роликах и посте — работы Ismail Inceoglu (id Wallhaven):
+# неоновый город на закате (6oqzgq, Glass в tour.webp), снежная улица с автобусом (dpwq6o, UwU), красная улица
+# с такси (dp35yo), синий неоновый город (725zyy, ролик тем); остальным профилям — его же работы в их цветах.
+# Чужой арт: в репо их нет — build.py скачивает в vitreus/walls/ (git-ignored), в backgrounds/ — ссылки:
+# главный профиля 0-original.jpg, остальные его обои 0r-wallhaven-<id>.jpg.
+HIS_WALLS = ["6oqzgq", "dpwq6o", "dp35yo", "725zyy"]
+MAIN_WALL = {"retro": "dp35yo", "uwu": "dpwq6o", "cyber": "725zyy", "proxy": "8op3vj", "milk": "1kl119",
+             "doodle": "3lepy9", "paper": "2ywq6m"}
+WALLS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "walls")
+
+
+def wallhaven(wid):
+    """Файл обоев Wallhaven wid в vitreus/walls/ (скачать, если нет; ужать до 2880 по ширине); None — не вышло."""
+    import json
+    import urllib.request
+    os.makedirs(WALLS_DIR, exist_ok=True)
+    dst = os.path.join(WALLS_DIR, f"wallhaven-{wid}.jpg")
+    if os.path.isfile(dst):
+        return dst
+    hdr = {"User-Agent": "omarchy-rices/1.0"}
+    try:
+        with urllib.request.urlopen(urllib.request.Request(f"https://wallhaven.cc/api/v1/w/{wid}", headers=hdr), timeout=30) as r:
+            url = json.load(r)["data"]["path"]
+        tmp = dst + ".part"
+        with urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=120) as r, open(tmp, "wb") as f:
+            f.write(r.read())
+        from PIL import Image
+        im = Image.open(tmp).convert("RGB")
+        if im.width > 2880:
+            im = im.resize((2880, round(im.height * 2880 / im.width)), Image.LANCZOS)
+        im.save(dst, quality=90, optimize=True)
+        os.unlink(tmp)
+        return dst
+    except Exception as e:  # noqa: BLE001
+        print(f"  wallhaven {wid}: не получен ({e})", file=sys.stderr)
+        return None
+
+
+def his_walls(v, out_dir):
+    """Ссылки на обои Vitreus в backgrounds/ темы v: 0-original — главный профиля, 0r-wallhaven-<id> — остальные его."""
+    bg = os.path.join(out_dir, "backgrounds")
+    os.makedirs(bg, exist_ok=True)
+    main = MAIN_WALL.get(v)
+    items = ([("0-original", main)] if main else []) + [(f"0r-wallhaven-{w}", w) for w in HIS_WALLS if w != main]
+    for stem, wid in items:
+        link = os.path.join(bg, stem + ".jpg")
+        src = wallhaven(wid)
+        if not src:
+            continue
+        if os.path.islink(link) or os.path.exists(link):
+            if os.path.islink(link) and os.readlink(link) == src:
+                continue
+            os.unlink(link)
+        os.symlink(src, link)
+
+
 def make(v, out=None, name=None):
     """Собрать тему варианта v (ключ VITREUS) в out (по умолчанию — каталог варианта в репо)."""
     p = palette(v)
@@ -291,6 +347,8 @@ def make(v, out=None, name=None):
     open(os.path.join(out, "apps", "fastfetch.jsonc"), "w").write(fastfetch_conf(v, t))
     if not COLOR:
         open(os.path.join(out, "btop.theme"), "w").write(btop_theme(t))
+    if v in MAIN_WALL:
+        his_walls(v, out)
 
 
 # omarchy-rice-dynamic: варианты, на которые может опираться dynamic, и их режим (dark / light)

@@ -14,8 +14,12 @@ from Wallhaven, like Vitreus does (Customizer → Dynamic).
 Each Vitreus theme has eleven interface colours (ink, faint, mint — the accent, mintlo / minthi, onmint, tint — the
 background, panel, deep, off, alert); `build.py` lays them out over every app with the generator of the `nothing` themes
 (`../nothing/build.py`). Syntax and status colours are not part of Vitreus — they are picked here to match each theme and
-brightened or darkened to a contrast of 4.5 against the background (comments 3), so code stays readable. The wallpapers
-are soft "liquid" blobs of the theme colours (Vitreus ships none), something for the glass to blur.
+brightened or darkened to a contrast of 4.5 against the background (comments 3), so code stays readable. Wallpapers:
+Vitreus ships none and takes them from Wallhaven; its demos and post use paintings by Ismail Inceoglu. `build.py` fetches
+those (Wallhaven `6oqzgq`, `dpwq6o`, `dp35yo`, `725zyy`, plus one more of his per theme) into `walls/` (git-ignored, not
+ours to redistribute) and links them into `backgrounds/`: the theme's main one as `0-original.jpg` (the Liquid-* presets
+start on it), the rest as `0r-wallhaven-<id>.jpg`. The soft "liquid" blobs of the theme colours (`1-liquid`, `2-drift`)
+stay as well.
 
 ```sh
 python3 build.py            # all themes

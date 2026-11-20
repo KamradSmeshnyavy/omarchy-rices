@@ -21,6 +21,9 @@ Colours and looks ported from (palettes and forms re-made here; their own files 
   Rumda        — github.com/hexonide/rumda (look only)
   Cozytile     — github.com/Darkkal44/Cozytile (look only)
 
+Vitreus wallpapers: Vitreus ships none, its demos use paintings by Ismail Inceoglu from Wallhaven; vitreus/build.py
+downloads them by id into vitreus/walls/ at build time, they are not in git and stay under the artist's terms.
+
 Original wallpapers of those rices are NOT in this repository: install.sh downloads them from the source repos
 (originals.py, cozytile/build.py), they stay under their authors' terms.
 

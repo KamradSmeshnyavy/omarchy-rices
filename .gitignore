@@ -6,6 +6,8 @@ __pycache__/
 */backgrounds/0r-*
 */*/backgrounds/0-original.*
 */*/backgrounds/0r-*
+# Обои Vitreus с Wallhaven (работы Ismail Inceoglu) — vitreus/build.py скачивает их сюда, темы ссылаются
+vitreus/walls/
 # Генерирует синхронизация браузеров dotfiles (omarchy-darkreader / omarchy-surfingkeys) — не часть тем
 dark-reader.json
 surfingkeys.js
