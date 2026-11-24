@@ -7,7 +7,8 @@
 #   bash install.sh --list      print "theme-name<TAB>path" of every theme and exit
 #
 # Links: ~/.config/omarchy/themes/<rice>-<variant> → <repo>/<rice>/<variant> (DOT-MATRIX: dot-matrix),
-#        ~/.local/bin/omarchy-rice-dynamic, ~/.local/bin/omarchy-space-world (wild worlds of the Space star map),
+#        ~/.local/bin/omarchy-rice-dynamic, ~/.local/bin/omarchy-rice-accent (the accent of any rice, settings sheet → COLORS),
+#        ~/.local/bin/omarchy-space-world (wild worlds of the Space star map),
 #        ~/.local/bin/omarchy-crt-filter and omarchy-crt-shader (Retro CRT: wallpaper filter, screen shader).
 #        A path that exists and is not a link is never touched.
 # The Customizer (github.com/KamradSmeshnyavy/omarchy-customizer) shows the rices and the Dynamic tab;
@@ -71,11 +72,12 @@ while IFS=$'\t' read -r name path; do
   n=$((n + 1))
 done < <(list)
 link "$here/scripts/omarchy-rice-dynamic" "$bin/omarchy-rice-dynamic"
+link "$here/scripts/omarchy-rice-accent" "$bin/omarchy-rice-accent"
 link "$here/space/world.py" "$bin/omarchy-space-world"
 link "$here/crt/filter.py" "$bin/omarchy-crt-filter"
 link "$here/crt/shader.py" "$bin/omarchy-crt-shader"
 link "$here/crt/library.py" "$bin/omarchy-crt-library"
 link "$here/crt/colors.py" "$bin/omarchy-crt-colors"
 link "$here/modern/colors.py" "$bin/omarchy-modern-colors"
-echo "Done: $n themes in $themes, omarchy-rice-dynamic, omarchy-space-world, omarchy-crt-filter and omarchy-crt-shader in $bin."
+echo "Done: $n themes in $themes, omarchy-rice-dynamic, omarchy-rice-accent, omarchy-space-world, omarchy-crt-filter and omarchy-crt-shader in $bin."
 case ":$PATH:" in *":$bin:"*) ;; *) echo "• add $bin to PATH" >&2 ;; esac
