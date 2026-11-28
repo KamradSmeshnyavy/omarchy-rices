@@ -1,0 +1,44 @@
+# Cozy Room Sakura — alacritty
+[colors.primary]
+background = "#fff6f0"
+foreground = "#4c2a38"
+
+[colors.cursor]
+text = "#fff6f0"
+cursor = "#bf831b"
+
+[colors.vi_mode_cursor]
+text = "#fff6f0"
+cursor = "#ad546c"
+
+[colors.search.matches]
+foreground = "#fff6f0"
+background = "#3f7397"
+
+[colors.search.focused_match]
+foreground = "#fff6f0"
+background = "#bf831b"
+
+[colors.selection]
+text = "#4c2a38"
+background = "#f3dec1"
+
+[colors.normal]
+black = "#3a3a38"
+red = "#be3d65"
+green = "#4d7d3e"
+yellow = "#936516"
+blue = "#ad546c"
+magenta = "#be3d65"
+cyan = "#633f4e"
+white = "#c7a99e"
+
+[colors.bright]
+black = "#a2858e"
+red = "#9c3253"
+green = "#3f6633"
+yellow = "#795312"
+blue = "#8e4559"
+magenta = "#9c3253"
+cyan = "#513440"
+white = "#bdbdb8"

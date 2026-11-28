@@ -1,0 +1,79 @@
+{
+ "rice": "room",
+ "variant": "evening",
+ "title": "Cozy Room Evening",
+ "mode": "dark",
+ "weather": "clear",
+ "font": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "dash": {
+  "w": 320,
+  "h": 180,
+  "scale": 2,
+  "window": [
+   22,
+   22,
+   84,
+   64
+  ],
+  "clock": [
+   128,
+   26
+  ],
+  "shelf": [
+   186,
+   54,
+   118
+  ],
+  "desk": [
+   150,
+   116,
+   160
+  ],
+  "radio": [
+   160,
+   98
+  ],
+  "plant": [
+   214,
+   100
+  ],
+  "mug": [
+   188,
+   100
+  ],
+  "lamp": [
+   272,
+   102
+  ],
+  "door": [
+   112,
+   92,
+   22,
+   50
+  ],
+  "floor": 142,
+  "cat": [
+   30,
+   130
+  ]
+ },
+ "wall": "#4a3340",
+ "wall2": "#3c2834",
+ "floor": "#6b4437",
+ "floor2": "#5a382d",
+ "night": "#1b2944",
+ "lamp": "#f2b25c",
+ "text": "#f4e3c1",
+ "dim": "#c9a98a",
+ "ink": "#21161d",
+ "wood": "#8b5a3c",
+ "wood2": "#5c3a2e",
+ "dark": "#3b241c",
+ "paper": "#f4e3c1",
+ "paperink": "#3b241c",
+ "red": "#d9675f",
+ "grn": "#7aa860",
+ "cyan": "#7fb2d9",
+ "pink": "#e48aa0"
+}

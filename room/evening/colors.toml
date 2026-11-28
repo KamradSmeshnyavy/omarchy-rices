@@ -1,0 +1,39 @@
+# Cozy Room Evening — omarchy-rices/room (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#f2b25c"
+cursor = "#f2b25c"
+selection = "#563d31"
+selection_foreground = "#f4e3c1"
+selection_background = "#563d31"
+muted = "#997f6c"
+
+background = "#2a1c25"
+dark_background = "#362427"
+darker_background = "#2a1c25"
+lighter_background = "#402a29"
+
+foreground = "#f4e3c1"
+dark_foreground = "#997f6c"
+light_foreground = "#c9a98a"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#f2b25c"
+hyprland_inactive_border = "#5f3e32"
+
+red = "#d9675f"
+yellow = "#f2b25c"
+orange = "#e4895e"
+green = "#7aa860"
+cyan = "#dec6a6"
+blue = "#e48aa0"
+magenta = "#d9675f"
+brown = "#905844"
+
+bright_red = "#e18882"
+bright_yellow = "#f5c380"
+bright_green = "#97bb83"
+bright_cyan = "#e5d3ba"
+bright_blue = "#eaa4b5"
+bright_magenta = "#e18882"

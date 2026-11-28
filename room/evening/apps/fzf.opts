@@ -1,0 +1,5 @@
+# Cozy Room Evening — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#2a1c25,bg+:#402a29,fg:#c9a98a,fg+:#f4e3c1
+--color=hl:#f2b25c,hl+:#f2b25c,info:#997f6c,prompt:#f2b25c
+--color=pointer:#f2b25c,marker:#7aa860,spinner:#e48aa0,header:#7fb2d9
+--color=border:#5f3e32,label:#f4e3c1,query:#f4e3c1,selected-bg:#563d31

@@ -1,0 +1,5 @@
+# Cozy Room Sakura — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#fff6f0,bg+:#c3a9ac,fg:#7a5464,fg+:#4c2a38
+--color=hl:#bf831b,hl+:#bf831b,info:#a2858e,prompt:#bf831b
+--color=pointer:#bf831b,marker:#4d7d3e,spinner:#ad546c,header:#3f7397
+--color=border:#c7a99e,label:#4c2a38,query:#4c2a38,selected-bg:#f3dec1

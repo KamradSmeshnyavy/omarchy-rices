@@ -1,0 +1,39 @@
+# Cozy Room Rain — omarchy-rices/room (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#f0c070"
+cursor = "#f0c070"
+selection = "#4b463c"
+selection_foreground = "#e8ecf2"
+selection_background = "#4b463c"
+muted = "#7f8897"
+
+background = "#1d232d"
+dark_background = "#282e39"
+darker_background = "#1d232d"
+lighter_background = "#313642"
+
+foreground = "#e8ecf2"
+dark_foreground = "#7f8897"
+light_foreground = "#a9b4c4"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#f0c070"
+hyprland_inactive_border = "#4a413e"
+
+red = "#d98a7a"
+yellow = "#f0c070"
+orange = "#e3a276"
+green = "#7fa58a"
+cyan = "#c8d0db"
+blue = "#c89ab8"
+magenta = "#d98a7a"
+brown = "#8a6955"
+
+bright_red = "#e1a497"
+bright_yellow = "#f3ce8f"
+bright_green = "#9bb9a4"
+bright_cyan = "#d4dae3"
+bright_blue = "#d4b0c8"
+bright_magenta = "#e1a497"

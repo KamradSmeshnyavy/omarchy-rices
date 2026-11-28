@@ -1,0 +1,17 @@
+# Cozy Room Evening — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#f2b25c", bold]
+    inactiveBorderColor: ["#5f3e32"]
+    searchingActiveBorderColor: ["#7fb2d9", bold]
+    optionsTextColor: ["#e48aa0"]
+    selectedLineBgColor: ["#402a29"]
+    inactiveViewSelectedLineBgColor: ["#362427"]
+    cherryPickedCommitFgColor: ["#d9675f"]
+    cherryPickedCommitBgColor: ["#402a29"]
+    markedBaseCommitFgColor: ["#e48aa0"]
+    markedBaseCommitBgColor: ["#402a29"]
+    unstagedChangesColor: ["#d9675f"]
+    defaultFgColor: ["#f4e3c1"]
+  authorColors:
+    "*": "#dec6a6"

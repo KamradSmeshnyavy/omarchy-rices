@@ -1,0 +1,12 @@
+# Cozy Room Evening — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#f2b25c"
+magenta = "#d9675f"
+red = "#d9675f"
+yellow = "#7fb2d9"
+green = "#7aa860"
+cyan = "#dec6a6"
+blue = "#e48aa0"
+foreground = "#f4e3c1"
+background = "#2a1c25"
+dark_background = "#362427"
+lighter_background = "#402a29"

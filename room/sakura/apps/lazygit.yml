@@ -1,0 +1,17 @@
+# Cozy Room Sakura — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#bf831b", bold]
+    inactiveBorderColor: ["#c7a99e"]
+    searchingActiveBorderColor: ["#3f7397", bold]
+    optionsTextColor: ["#ad546c"]
+    selectedLineBgColor: ["#c3a9ac"]
+    inactiveViewSelectedLineBgColor: ["#decbca"]
+    cherryPickedCommitFgColor: ["#be3d65"]
+    cherryPickedCommitBgColor: ["#c3a9ac"]
+    markedBaseCommitFgColor: ["#ad546c"]
+    markedBaseCommitBgColor: ["#c3a9ac"]
+    unstagedChangesColor: ["#be3d65"]
+    defaultFgColor: ["#4c2a38"]
+  authorColors:
+    "*": "#633f4e"

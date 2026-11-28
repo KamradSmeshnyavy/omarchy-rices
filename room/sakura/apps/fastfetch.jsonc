@@ -1,0 +1,69 @@
+// Cozy Room Sakura: omarchy-themes/rices/room/build.py
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "~/.local/state/omarchy/current/theme/apps/room-logo.txt",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;201;138;28",
+      "title": "38;2;76;42;56",
+      "output": "38;2;76;42;56",
+      "separator": "38;2;122;84;100"
+    },
+    "key": {
+      "width": 9
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;201;138;28m☕ \u001b[38;2;76;42;56mзаписка на холодильнике"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;122;84;100m┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄"
+    },
+    {
+      "type": "title",
+      "key": "жилец",
+      "format": "{user-name}@{host-name}"
+    },
+    {
+      "type": "os",
+      "key": "дом",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "wm",
+      "key": "окна",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "shell",
+      "key": "шёпот",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "дома уже"
+    },
+    {
+      "type": "memory",
+      "key": "на полках",
+      "format": "{used} / {total}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[48;2;76;42;56m   \u001b[48;2;154;106;90m   \u001b[48;2;200;64;106m   \u001b[48;2;94;154;76m   \u001b[48;2;201;138;28m   \u001b[48;2;74;134;176m   \u001b[48;2;224;108;140m   \u001b[48;2;255;246;240m   \u001b[0m"
+    }
+  ]
+}

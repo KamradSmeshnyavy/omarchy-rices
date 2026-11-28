@@ -1,0 +1,69 @@
+// Cozy Room Rain: omarchy-themes/rices/room/build.py
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "~/.local/state/omarchy/current/theme/apps/room-logo.txt",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;240;192;112",
+      "title": "38;2;232;236;242",
+      "output": "38;2;232;236;242",
+      "separator": "38;2;169;180;196"
+    },
+    "key": {
+      "width": 9
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;240;192;112m☕ \u001b[38;2;232;236;242mзаписка на холодильнике"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;169;180;196m┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄"
+    },
+    {
+      "type": "title",
+      "key": "жилец",
+      "format": "{user-name}@{host-name}"
+    },
+    {
+      "type": "os",
+      "key": "дом",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "wm",
+      "key": "окна",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "shell",
+      "key": "шёпот",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "дома уже"
+    },
+    {
+      "type": "memory",
+      "key": "на полках",
+      "format": "{used} / {total}"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[48;2;42;45;55m   \u001b[48;2;110;90;76m   \u001b[48;2;217;138;122m   \u001b[48;2;127;165;138m   \u001b[48;2;240;192;112m   \u001b[48;2;156;195;230m   \u001b[48;2;200;154;184m   \u001b[48;2;232;228;218m   \u001b[0m"
+    }
+  ]
+}

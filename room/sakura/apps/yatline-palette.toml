@@ -1,0 +1,12 @@
+# Cozy Room Sakura — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#bf831b"
+magenta = "#be3d65"
+red = "#be3d65"
+yellow = "#3f7397"
+green = "#4d7d3e"
+cyan = "#633f4e"
+blue = "#ad546c"
+foreground = "#4c2a38"
+background = "#fff6f0"
+dark_background = "#decbca"
+lighter_background = "#c3a9ac"

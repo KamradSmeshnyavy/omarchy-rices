@@ -1,0 +1,79 @@
+{
+ "rice": "room",
+ "variant": "sakura",
+ "title": "Cozy Room Sakura",
+ "mode": "light",
+ "weather": "clear",
+ "font": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "dash": {
+  "w": 320,
+  "h": 180,
+  "scale": 2,
+  "window": [
+   22,
+   22,
+   84,
+   64
+  ],
+  "clock": [
+   128,
+   26
+  ],
+  "shelf": [
+   186,
+   54,
+   118
+  ],
+  "desk": [
+   150,
+   116,
+   160
+  ],
+  "radio": [
+   160,
+   98
+  ],
+  "plant": [
+   214,
+   100
+  ],
+  "mug": [
+   188,
+   100
+  ],
+  "lamp": [
+   272,
+   102
+  ],
+  "door": [
+   112,
+   92,
+   22,
+   50
+  ],
+  "floor": 142,
+  "cat": [
+   30,
+   130
+  ]
+ },
+ "wall": "#e3b7c2",
+ "wall2": "#d2a0ae",
+ "floor": "#a8707a",
+ "floor2": "#93606a",
+ "night": "#8fb8e0",
+ "lamp": "#c98a1c",
+ "text": "#4c2a38",
+ "dim": "#7a5464",
+ "ink": "#3a2030",
+ "wood": "#9a6a5a",
+ "wood2": "#7a4a5a",
+ "dark": "#4c2a38",
+ "paper": "#fff6f0",
+ "paperink": "#4c2a38",
+ "red": "#c8406a",
+ "grn": "#5e9a4c",
+ "cyan": "#4a86b0",
+ "pink": "#e06c8c"
+}

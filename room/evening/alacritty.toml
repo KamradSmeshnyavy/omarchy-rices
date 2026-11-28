@@ -1,0 +1,44 @@
+# Cozy Room Evening — alacritty
+[colors.primary]
+background = "#2a1c25"
+foreground = "#f4e3c1"
+
+[colors.cursor]
+text = "#21161d"
+cursor = "#f2b25c"
+
+[colors.vi_mode_cursor]
+text = "#2a1c25"
+cursor = "#e48aa0"
+
+[colors.search.matches]
+foreground = "#2a1c25"
+background = "#7fb2d9"
+
+[colors.search.focused_match]
+foreground = "#21161d"
+background = "#f2b25c"
+
+[colors.selection]
+text = "#f4e3c1"
+background = "#563d31"
+
+[colors.normal]
+black = "#5f3e32"
+red = "#d9675f"
+green = "#7aa860"
+yellow = "#f2b25c"
+blue = "#e48aa0"
+magenta = "#d9675f"
+cyan = "#dec6a6"
+white = "#c9a98a"
+
+[colors.bright]
+black = "#997f6c"
+red = "#e18882"
+green = "#97bb83"
+yellow = "#f5c380"
+blue = "#eaa4b5"
+magenta = "#e18882"
+cyan = "#e5d3ba"
+white = "#ffffff"

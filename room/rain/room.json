@@ -1,0 +1,79 @@
+{
+ "rice": "room",
+ "variant": "rain",
+ "title": "Cozy Room Rain",
+ "mode": "dark",
+ "weather": "rain",
+ "font": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "dash": {
+  "w": 320,
+  "h": 180,
+  "scale": 2,
+  "window": [
+   22,
+   22,
+   84,
+   64
+  ],
+  "clock": [
+   128,
+   26
+  ],
+  "shelf": [
+   186,
+   54,
+   118
+  ],
+  "desk": [
+   150,
+   116,
+   160
+  ],
+  "radio": [
+   160,
+   98
+  ],
+  "plant": [
+   214,
+   100
+  ],
+  "mug": [
+   188,
+   100
+  ],
+  "lamp": [
+   272,
+   102
+  ],
+  "door": [
+   112,
+   92,
+   22,
+   50
+  ],
+  "floor": 142,
+  "cat": [
+   30,
+   130
+  ]
+ },
+ "wall": "#36404f",
+ "wall2": "#2b3341",
+ "floor": "#4b4b57",
+ "floor2": "#3d3d48",
+ "night": "#121b29",
+ "lamp": "#f0c070",
+ "text": "#e8ecf2",
+ "dim": "#a9b4c4",
+ "ink": "#161a22",
+ "wood": "#6e5a4c",
+ "wood2": "#4a4e5c",
+ "dark": "#2a2d37",
+ "paper": "#e8e4da",
+ "paperink": "#2a2d37",
+ "red": "#d98a7a",
+ "grn": "#7fa58a",
+ "cyan": "#9cc3e6",
+ "pink": "#c89ab8"
+}

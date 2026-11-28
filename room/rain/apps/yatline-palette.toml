@@ -1,0 +1,12 @@
+# Cozy Room Rain — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#f0c070"
+magenta = "#d98a7a"
+red = "#d98a7a"
+yellow = "#9cc3e6"
+green = "#7fa58a"
+cyan = "#c8d0db"
+blue = "#c89ab8"
+foreground = "#e8ecf2"
+background = "#1d232d"
+dark_background = "#282e39"
+lighter_background = "#313642"

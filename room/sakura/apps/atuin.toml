@@ -1,0 +1,12 @@
+[theme]
+name = "omarchy"
+
+[colors]
+AlertInfo = "#4d7d3e"
+AlertWarn = "#936516"
+AlertError = "#be3d65"
+Annotation = "#ad546c"
+Base = "#4c2a38"
+Guidance = "#a2858e"
+Important = "#bf831b"
+Title = "#4c2a38"

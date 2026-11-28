@@ -1,0 +1,5 @@
+# Cozy Room Rain — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#1d232d,bg+:#313642,fg:#a9b4c4,fg+:#e8ecf2
+--color=hl:#f0c070,hl+:#f0c070,info:#7f8897,prompt:#f0c070
+--color=pointer:#f0c070,marker:#7fa58a,spinner:#c89ab8,header:#9cc3e6
+--color=border:#4a413e,label:#e8ecf2,query:#e8ecf2,selected-bg:#4b463c

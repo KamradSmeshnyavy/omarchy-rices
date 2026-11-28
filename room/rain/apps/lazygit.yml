@@ -1,0 +1,17 @@
+# Cozy Room Rain — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#f0c070", bold]
+    inactiveBorderColor: ["#4a413e"]
+    searchingActiveBorderColor: ["#9cc3e6", bold]
+    optionsTextColor: ["#c89ab8"]
+    selectedLineBgColor: ["#313642"]
+    inactiveViewSelectedLineBgColor: ["#282e39"]
+    cherryPickedCommitFgColor: ["#d98a7a"]
+    cherryPickedCommitBgColor: ["#313642"]
+    markedBaseCommitFgColor: ["#c89ab8"]
+    markedBaseCommitBgColor: ["#313642"]
+    unstagedChangesColor: ["#d98a7a"]
+    defaultFgColor: ["#e8ecf2"]
+  authorColors:
+    "*": "#c8d0db"

@@ -1,0 +1,39 @@
+# Приглашение терминала райса Cozy Room: тихо и тепло — кот, комната, ветка, ☕ вместо стрелки.
+# Цвета — 16 цветов темы (жёлтый — свет лампы, зелёный — растение, голубой — дождь).
+format = """[$username](bold yellow)[ в ](bright-black)[$directory](bold cyan)$git_branch$git_status$cmd_duration$status
+$character"""
+add_newline = true
+
+[username]
+show_always = true
+format = "[$user]($style)"
+style_user = "bold yellow"
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold cyan"
+read_only = " 🔒"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+format = "[🌿 $branch]($style) "
+style = "green"
+
+[git_status]
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+style = "yellow"
+
+[cmd_duration]
+format = "[заварилось за $duration]($style) "
+style = "bright-black"
+
+[status]
+disabled = false
+format = "[разлилось $status]($style) "
+style = "bold red"
+
+[character]
+success_symbol = "[☕](bold yellow)"
+error_symbol = "[☕](bold red)"
+vimcmd_symbol = "[🐾](bold green)"

@@ -1,4 +1,4 @@
-"""Общий набор пиксельных райсов (quest, cozy, handheld, fantasy): спрайты из строковых карт, логотип fastfetch
+"""Общий набор пиксельных райсов (quest, room, handheld, fantasy): спрайты из строковых карт, логотип fastfetch
 полублоками, сцены-обои, обои пользователя из ~/Wallpapers и фильтр картинки под палитру темы.
 
 Спрайт — список строк одинаковой длины; буква — роль цвета, «.» — прозрачно. Роли красит словарь {буква: "#hex"}.
@@ -39,15 +39,48 @@ SPRITES = {
     "star": ["..y..", "..y..", "yyyyy", ".yyy.", "y...y"],
 }
 
+# Предметы комнаты Cozy Room (инвентарь Super+M, дашборд-комната, бар). Роли: k контур, W светлый (крем), w бумага,
+# n дерево, N тёмное дерево, y свет лампы, r красный, g зелёный, c голубой, s пар / тусклый, m кружка, p розовый,
+# b ночь (стекло), e глаза.
+ROOM = {
+    "antenna": ["c.....c", ".c...c.", "..c.c..", "...c...", "...k...", "...k...", "..kkk..", ".kkkkk."],
+    "horn": ["......kk", "....kkyk", "kk.kyyyk", "kykyyyyk", "kk.kyyyk", "....kkyk", "......kk"],
+    "gem": ["..kkk..", ".kcWck.", "kccccck", ".kcccck", "..kcck.", "...kk.."],
+    "candle": ["..y..", ".yWy.", "..y..", ".kkk.", ".kWk.", ".kWk.", ".kWk.", "kkkkk"],
+    "candle-off": ["..s..", ".s...", "..s..", ".kkk.", ".kWk.", ".kWk.", ".kWk.", "kkkkk"],
+    "star": ["..y..", "..y..", "yyyyy", ".yyy.", "y...y"],
+    "star-off": ["..s..", "..s..", "sssss", ".sss.", "s...s"],
+    "cat": ["k.....k.", "kk...kk.", "kkkkkkk.", "kekkekk.", "kkkkkkk.", ".kkkkk.k", ".kkkkkkk"],
+    "cat-sleep": [".........", ".k..k....", ".kkkk....", "kkkkkkkk.", "kkkkkkkkk", ".kkkkkkk."],
+    "mug": ["..s..s..", ".s..s...", "........", "kkkkkk..", "kmmmmkkk", "kmWmmk.k", "kmmmmkkk", "kkkkkk.."],
+    "mug-cold": ["........", "........", "........", "kkkkkk..", "kmmmmkkk", "kmWmmk.k", "kmmmmkkk", "kkkkkk.."],
+    "mic": [".kkk.", "kgggk", "kgWgk", "kgggk", ".kkk.", "k.k.k", ".kkk.", "..k..", ".kkk."],
+    "mic-off": [".kkk.", "kssrk", "ksrsk", "krssk", ".kkk.", "k.k.k", ".kkk.", "..k..", ".kkk."],
+    "camera": ["..kkk...", "kkkkkkkk", "kWkkkkWk", "kkkWWkkk", "kkWccWkk", "kkkWWkkk", "kkkkkkkk"],
+    "wrench": ["...kk.k", "...kWkk", "..kWWk.", ".kWk...", "kWk....", "kk.....", "........"],
+    "door": ["kkkkkkk", "knnnnnk", "knNnNnk", "knnnnnk", "knNnNnk", "knnnnyk", "knnnnnk", "knNnNnk", "knnnnnk", "kkkkkkk"],
+    "plant": ["..g.g..", ".ggggg.", "gg.g.gg", ".ggggg.", "...g...", ".rrrrr.", ".rrrrr.", "..rrr.."],
+    "plant-dry": ["..n....", ".n.n.n.", "n..n..n", "...n.n.", "...n...", ".rrrrr.", ".rrrrr.", "..rrr.."],
+    "radio": ["...k......", "....k.....", "kkkkkkkkkk", "knnnnnnnnk", "kWWWWnyyyk", "kWkWWnykyk", "kWWWWnyyyk",
+              "knnnnnnnnk", "kkkkkkkkkk"],
+    "lamp": [".yyyyy.", "yyyyyyy", "kkkkkkk", "...k...", "...k...", "...k...", ".kkkkk."],
+    "clock": [".kkkkk.", "kWWkWWk", "kWWkWWk", "kWWkkWk", "kWWWWWk", "kWWWWWk", ".kkkkk."],
+    "note": ["wwwwww", "wkkkkw", "wwwwww", "wkkkww", "wwwwww", "wkkkkw", "wwwwww"],
+}
+
+
+def rows_of(name):
+    return SPRITES[name] if name in SPRITES else ROOM[name]
+
 
 def size(name):
-    rows = SPRITES[name]
+    rows = rows_of(name)
     return max(len(r) for r in rows), len(rows)
 
 
 def pixels(name):
     """[(x, y, буква)] непрозрачных клеток."""
-    return [(x, y, ch) for y, row in enumerate(SPRITES[name]) for x, ch in enumerate(row) if ch != "."]
+    return [(x, y, ch) for y, row in enumerate(rows_of(name)) for x, ch in enumerate(row) if ch != "."]
 
 
 def draw(img, name, x0, y0, colors, scale=1):

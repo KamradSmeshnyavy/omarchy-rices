@@ -1,0 +1,39 @@
+# Cozy Room Sakura — omarchy-rices/room (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "light"
+
+accent = "#bf831b"
+cursor = "#bf831b"
+selection = "#f3dec1"
+selection_foreground = "#4c2a38"
+selection_background = "#f3dec1"
+muted = "#a2858e"
+
+background = "#fff6f0"
+dark_background = "#decbca"
+darker_background = "#decbca"
+lighter_background = "#c3a9ac"
+
+foreground = "#4c2a38"
+dark_foreground = "#a2858e"
+light_foreground = "#7a5464"
+bright_foreground = "#000000"
+
+hyprland_active_border = "#bf831b"
+hyprland_inactive_border = "#c7a99e"
+
+red = "#be3d65"
+yellow = "#936516"
+orange = "#ab533d"
+green = "#4d7d3e"
+cyan = "#633f4e"
+blue = "#ad546c"
+magenta = "#be3d65"
+brown = "#d19c8e"
+
+bright_red = "#9c3253"
+bright_yellow = "#795312"
+bright_green = "#3f6633"
+bright_cyan = "#513440"
+bright_blue = "#8e4559"
+bright_magenta = "#9c3253"

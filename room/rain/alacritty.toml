@@ -1,0 +1,44 @@
+# Cozy Room Rain — alacritty
+[colors.primary]
+background = "#1d232d"
+foreground = "#e8ecf2"
+
+[colors.cursor]
+text = "#161a22"
+cursor = "#f0c070"
+
+[colors.vi_mode_cursor]
+text = "#1d232d"
+cursor = "#c89ab8"
+
+[colors.search.matches]
+foreground = "#1d232d"
+background = "#9cc3e6"
+
+[colors.search.focused_match]
+foreground = "#161a22"
+background = "#f0c070"
+
+[colors.selection]
+text = "#e8ecf2"
+background = "#4b463c"
+
+[colors.normal]
+black = "#4a413e"
+red = "#d98a7a"
+green = "#7fa58a"
+yellow = "#f0c070"
+blue = "#c89ab8"
+magenta = "#d98a7a"
+cyan = "#c8d0db"
+white = "#a9b4c4"
+
+[colors.bright]
+black = "#7f8897"
+red = "#e1a497"
+green = "#9bb9a4"
+yellow = "#f3ce8f"
+blue = "#d4b0c8"
+magenta = "#e1a497"
+cyan = "#d4dae3"
+white = "#ffffff"
