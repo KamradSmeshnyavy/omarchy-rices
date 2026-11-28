@@ -1,0 +1,44 @@
+# Quest Forest — alacritty
+[colors.primary]
+background = "#0b2d1d"
+foreground = "#f2f8ee"
+
+[colors.cursor]
+text = "#06140c"
+cursor = "#f5e663"
+
+[colors.vi_mode_cursor]
+text = "#0b2d1d"
+cursor = "#a0c3af"
+
+[colors.search.matches]
+foreground = "#0b2d1d"
+background = "#6fd3e0"
+
+[colors.search.focused_match]
+foreground = "#06140c"
+background = "#f5e663"
+
+[colors.selection]
+text = "#f2f8ee"
+background = "#1d5738"
+
+[colors.normal]
+black = "#648971"
+red = "#ff7a5a"
+green = "#8ee06a"
+yellow = "#f5e663"
+blue = "#a0c3af"
+magenta = "#bea296"
+cyan = "#d5edd7"
+white = "#bde4c4"
+
+[colors.bright]
+black = "#7fa48a"
+red = "#ff977e"
+green = "#a7e78b"
+yellow = "#f7ec85"
+blue = "#b5d0c1"
+magenta = "#ccb6ad"
+cyan = "#def1e0"
+white = "#ffffff"

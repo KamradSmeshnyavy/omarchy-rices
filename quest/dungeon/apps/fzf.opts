@@ -1,0 +1,5 @@
+# Quest Dungeon — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#120406,bg+:#28090d,fg:#b39a80,fg+:#ece0c8
+--color=hl:#ff3b30,hl+:#ff3b30,info:#7b6655,prompt:#ff3b30
+--color=pointer:#ff3b30,marker:#e0453a,spinner:#a69294,header:#9a7ae8
+--color=border:#501b1c,label:#ece0c8,query:#ece0c8,selected-bg:#28090d

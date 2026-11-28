@@ -1,0 +1,5 @@
+# Quest Forest — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0b2d1d,bg+:#1d5738,fg:#bde4c4,fg+:#f2f8ee
+--color=hl:#f5e663,hl+:#f5e663,info:#7fa48a,prompt:#f5e663
+--color=pointer:#f5e663,marker:#8ee06a,spinner:#a0c3af,header:#6fd3e0
+--color=border:#648971,label:#f2f8ee,query:#f2f8ee,selected-bg:#1d5738

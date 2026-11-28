@@ -1,0 +1,21 @@
+{
+ "rice": "quest",
+ "variant": "classic",
+ "title": "Quest Classic",
+ "mode": "dark",
+ "font": "Press Start 2P",
+ "body": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "radius": 6,
+ "w1": "#2a4cc0",
+ "w2": "#0d1a66",
+ "frame": "#f4f4f4",
+ "frame2": "#8f9ac8",
+ "text": "#f4f4f4",
+ "dim": "#a9b4e8",
+ "hi": "#ffd84a",
+ "hp": "#5ee06a",
+ "mp": "#5cb4ff",
+ "red": "#ff6a5a",
+ "ink": "#0a0c20"
+}

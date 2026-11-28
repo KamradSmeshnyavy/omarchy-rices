@@ -1,0 +1,90 @@
+# Quest Classic — helix
+"ui.background" = { bg = "bg" }
+"ui.text" = "fg"
+"ui.text.focus" = { fg = "fg", bg = "raised" }
+"ui.cursor" = { fg = "on_accent", bg = "dim" }
+"ui.cursor.primary" = { fg = "on_accent", bg = "accent" }
+"ui.cursor.match" = { bg = "line", modifiers = ["bold"] }
+"ui.selection" = { bg = "raised" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.linenr" = "comment"
+"ui.linenr.selected" = "fg"
+"ui.cursorline.primary" = { bg = "panel" }
+"ui.statusline" = { fg = "dim", bg = "panel" }
+"ui.statusline.inactive" = { fg = "comment", bg = "panel" }
+"ui.statusline.normal" = { fg = "on_accent", bg = "accent", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "string", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "special", modifiers = ["bold"] }
+"ui.popup" = { bg = "panel" }
+"ui.window" = "line"
+"ui.help" = { fg = "fg", bg = "panel" }
+"ui.menu" = { fg = "fg", bg = "panel" }
+"ui.menu.selected" = { bg = "raised" }
+"ui.virtual.whitespace" = "line"
+"ui.virtual.ruler" = { bg = "panel" }
+"ui.virtual.inlay-hint" = "comment"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"keyword" = "keyword"
+"keyword.function" = "keyword"
+"string" = "string"
+"string.regexp" = "special"
+"constant" = "constant"
+"constant.numeric" = "number"
+"constant.builtin.boolean" = "number"
+"constant.character.escape" = "special"
+"type" = "type"
+"type.builtin" = "type"
+"function" = "function"
+"function.macro" = "special"
+"variable" = "fg"
+"variable.parameter" = "fg"
+"variable.other.member" = "property"
+"variable.builtin" = "keyword"
+"attribute" = "special"
+"namespace" = "type"
+"tag" = "keyword"
+"label" = "special"
+"operator" = "dim"
+"punctuation" = "dim"
+"constructor" = "type"
+"markup.heading" = { fg = "accent", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "function", modifiers = ["underlined"] }
+"markup.raw" = "string"
+"markup.list" = "keyword"
+"markup.quote" = "dim"
+"diff.plus" = "ok"
+"diff.minus" = "error"
+"diff.delta" = "info"
+"error" = "error"
+"warning" = "warn"
+"info" = "info"
+"hint" = "hint"
+"diagnostic.error" = { underline = { style = "curl", color = "error" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "warn" } }
+
+[palette]
+bg = "#0d1a66"
+panel = "#162981"
+raised = "#1d3698"
+line = "#5b67a1"
+fg = "#f4f4f4"
+dim = "#a9b4e8"
+comment = "#727eba"
+accent = "#ffd84a"
+selection = "#1d3698"
+keyword = "#ffd84a"
+string = "#5ee06a"
+number = "#ffa152"
+type = "#5cb4ff"
+function = "#9faee3"
+property = "#cbd1ed"
+special = "#b68ba4"
+constant = "#b7dc58"
+error = "#ff6a5a"
+warn = "#ffb250"
+info = "#5cb4ff"
+hint = "#a9b4e8"
+ok = "#5ee06a"
+on_accent = "#0a0c20"

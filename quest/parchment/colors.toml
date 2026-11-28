@@ -1,0 +1,39 @@
+# Quest Parchment — omarchy-rices/quest (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "light"
+
+accent = "#b0302a"
+cursor = "#b0302a"
+selection = "#dfcdac"
+selection_foreground = "#2e2216"
+selection_background = "#dfcdac"
+muted = "#968568"
+
+background = "#f8efd6"
+dark_background = "#f4e9cb"
+darker_background = "#f4e9cb"
+lighter_background = "#f0e4c1"
+
+foreground = "#2e2216"
+dark_foreground = "#968568"
+light_foreground = "#6e5636"
+bright_foreground = "#000000"
+
+hyprland_active_border = "#b0302a"
+hyprland_inactive_border = "#cdb58e"
+
+red = "#b0302a"
+yellow = "#b0302a"
+orange = "#9a5a14"
+green = "#3d7a2a"
+cyan = "#513f28"
+blue = "#706c60"
+magenta = "#74435c"
+brown = "#c49d6b"
+
+bright_red = "#902722"
+bright_yellow = "#902722"
+bright_green = "#326422"
+bright_cyan = "#423421"
+bright_blue = "#5c594f"
+bright_magenta = "#5f374b"

@@ -1,0 +1,39 @@
+# Quest Dusk — omarchy-rices/quest (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#ffb347"
+cursor = "#ffb347"
+selection = "#4a216a"
+selection_foreground = "#f6eefa"
+selection_background = "#4a216a"
+muted = "#9a82ae"
+
+background = "#24103d"
+dark_background = "#391956"
+darker_background = "#24103d"
+lighter_background = "#4a216a"
+
+foreground = "#f6eefa"
+dark_foreground = "#9a82ae"
+light_foreground = "#d9bfeb"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#ffb347"
+hyprland_inactive_border = "#836899"
+
+red = "#ff6a7a"
+yellow = "#ffb347"
+orange = "#ff8e60"
+green = "#7ee08a"
+cyan = "#e6d4f2"
+blue = "#bca1cd"
+magenta = "#c598ac"
+brown = "#9c5550"
+
+bright_red = "#ff8b97"
+bright_yellow = "#ffc46f"
+bright_green = "#9ae7a4"
+bright_cyan = "#ecddf5"
+bright_blue = "#cbb6d8"
+bright_magenta = "#d2afbe"

@@ -1,0 +1,12 @@
+# Quest Classic — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#ffd84a"
+magenta = "#b68ba4"
+red = "#ff6a5a"
+yellow = "#5cb4ff"
+green = "#5ee06a"
+cyan = "#cbd1ed"
+blue = "#9faee3"
+foreground = "#f4f4f4"
+background = "#0d1a66"
+dark_background = "#162981"
+lighter_background = "#1d3698"

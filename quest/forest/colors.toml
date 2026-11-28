@@ -1,0 +1,39 @@
+# Quest Forest — omarchy-rices/quest (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#f5e663"
+cursor = "#f5e663"
+selection = "#1d5738"
+selection_foreground = "#f2f8ee"
+selection_background = "#1d5738"
+muted = "#7fa48a"
+
+background = "#0b2d1d"
+dark_background = "#15442c"
+darker_background = "#0b2d1d"
+lighter_background = "#1d5738"
+
+foreground = "#f2f8ee"
+dark_foreground = "#7fa48a"
+light_foreground = "#bde4c4"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#f5e663"
+hyprland_inactive_border = "#648971"
+
+red = "#ff7a5a"
+yellow = "#f5e663"
+orange = "#fab05e"
+green = "#8ee06a"
+cyan = "#d5edd7"
+blue = "#a0c3af"
+magenta = "#bea296"
+brown = "#8e7541"
+
+bright_red = "#ff977e"
+bright_yellow = "#f7ec85"
+bright_green = "#a7e78b"
+bright_cyan = "#def1e0"
+bright_blue = "#b5d0c1"
+bright_magenta = "#ccb6ad"

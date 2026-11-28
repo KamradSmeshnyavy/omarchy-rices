@@ -1,0 +1,5 @@
+# Quest Classic — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#0d1a66,bg+:#1d3698,fg:#a9b4e8,fg+:#f4f4f4
+--color=hl:#ffd84a,hl+:#ffd84a,info:#727eba,prompt:#ffd84a
+--color=pointer:#ffd84a,marker:#5ee06a,spinner:#9faee3,header:#5cb4ff
+--color=border:#5b67a1,label:#f4f4f4,query:#f4f4f4,selected-bg:#1d3698

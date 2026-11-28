@@ -1,0 +1,12 @@
+# Quest Dusk — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#ffb347"
+magenta = "#c598ac"
+red = "#ff6a7a"
+yellow = "#7fd0e8"
+green = "#7ee08a"
+cyan = "#e6d4f2"
+blue = "#bca1cd"
+foreground = "#f6eefa"
+background = "#24103d"
+dark_background = "#391956"
+lighter_background = "#4a216a"

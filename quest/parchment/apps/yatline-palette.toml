@@ -1,0 +1,12 @@
+# Quest Parchment — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#b0302a"
+magenta = "#74435c"
+red = "#b0302a"
+yellow = "#2a5a9a"
+green = "#3d7a2a"
+cyan = "#513f28"
+blue = "#706c60"
+foreground = "#2e2216"
+background = "#f8efd6"
+dark_background = "#f4e9cb"
+lighter_background = "#f0e4c1"

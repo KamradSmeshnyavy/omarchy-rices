@@ -1,0 +1,44 @@
+# Quest Parchment — alacritty
+[colors.primary]
+background = "#f8efd6"
+foreground = "#2e2216"
+
+[colors.cursor]
+text = "#f8efd6"
+cursor = "#b0302a"
+
+[colors.vi_mode_cursor]
+text = "#f8efd6"
+cursor = "#706c60"
+
+[colors.search.matches]
+foreground = "#f8efd6"
+background = "#2a5a9a"
+
+[colors.search.focused_match]
+foreground = "#f8efd6"
+background = "#b0302a"
+
+[colors.selection]
+text = "#2e2216"
+background = "#dfcdac"
+
+[colors.normal]
+black = "#3a3a38"
+red = "#b0302a"
+green = "#3d7a2a"
+yellow = "#b0302a"
+blue = "#706c60"
+magenta = "#74435c"
+cyan = "#513f28"
+white = "#cdb58e"
+
+[colors.bright]
+black = "#968568"
+red = "#902722"
+green = "#326422"
+yellow = "#902722"
+blue = "#5c594f"
+magenta = "#5f374b"
+cyan = "#423421"
+white = "#bdbdb8"

@@ -1,0 +1,98 @@
+// Quest Classic: omarchy-themes/rices/quest/build.py
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "~/.local/state/omarchy/current/theme/apps/quest-logo.txt",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;255;216;74",
+      "title": "38;2;244;244;244",
+      "output": "38;2;244;244;244",
+      "separator": "38;2;143;154;200"
+    },
+    "key": {
+      "width": 8
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "·"
+      },
+      "width": 10,
+      "border": {
+        "left": "",
+        "right": ""
+      }
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "38;2;94;224;106",
+        "yellow": "38;2;255;216;74",
+        "red": "38;2;255;106;90"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;216;74m▶ \u001b[38;2;244;244;244mЛИСТ ПЕРСОНАЖА"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;143;154;200m══════════════════════════"
+    },
+    {
+      "type": "title",
+      "key": "HERO",
+      "format": "{user-name}@{host-name}"
+    },
+    {
+      "type": "os",
+      "key": "CLASS",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "wm",
+      "key": "WEAPON",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "shell",
+      "key": "SPELL",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "EXP"
+    },
+    {
+      "type": "battery",
+      "key": "HP",
+      "format": "{capacity-bar} {capacity}"
+    },
+    {
+      "type": "memory",
+      "key": "MP",
+      "format": "{percentage-bar} {used}"
+    },
+    {
+      "type": "disk",
+      "key": "GOLD",
+      "format": "{size-available} free"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[48;2;13;26;102m   \u001b[48;2;42;76;192m   \u001b[48;2;143;154;200m   \u001b[48;2;255;106;90m   \u001b[48;2;94;224;106m   \u001b[48;2;92;180;255m   \u001b[48;2;255;216;74m   \u001b[48;2;244;244;244m   \u001b[0m"
+    }
+  ]
+}

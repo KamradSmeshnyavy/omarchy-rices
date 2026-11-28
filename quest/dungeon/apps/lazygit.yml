@@ -1,0 +1,17 @@
+# Quest Dungeon — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#ff3b30", bold]
+    inactiveBorderColor: ["#501b1c"]
+    searchingActiveBorderColor: ["#9a7ae8", bold]
+    optionsTextColor: ["#a69294"]
+    selectedLineBgColor: ["#28090d"]
+    inactiveViewSelectedLineBgColor: ["#1e070a"]
+    cherryPickedCommitFgColor: ["#c86a9a"]
+    cherryPickedCommitBgColor: ["#28090d"]
+    markedBaseCommitFgColor: ["#a69294"]
+    markedBaseCommitBgColor: ["#28090d"]
+    unstagedChangesColor: ["#ff3b30"]
+    defaultFgColor: ["#ece0c8"]
+  authorColors:
+    "*": "#cdbaa0"

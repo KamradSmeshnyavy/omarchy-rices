@@ -1,0 +1,44 @@
+# Quest Dusk — alacritty
+[colors.primary]
+background = "#24103d"
+foreground = "#f6eefa"
+
+[colors.cursor]
+text = "#12081c"
+cursor = "#ffb347"
+
+[colors.vi_mode_cursor]
+text = "#24103d"
+cursor = "#bca1cd"
+
+[colors.search.matches]
+foreground = "#24103d"
+background = "#7fd0e8"
+
+[colors.search.focused_match]
+foreground = "#12081c"
+background = "#ffb347"
+
+[colors.selection]
+text = "#f6eefa"
+background = "#4a216a"
+
+[colors.normal]
+black = "#836899"
+red = "#ff6a7a"
+green = "#7ee08a"
+yellow = "#ffb347"
+blue = "#bca1cd"
+magenta = "#c598ac"
+cyan = "#e6d4f2"
+white = "#d9bfeb"
+
+[colors.bright]
+black = "#9a82ae"
+red = "#ff8b97"
+green = "#9ae7a4"
+yellow = "#ffc46f"
+blue = "#cbb6d8"
+magenta = "#d2afbe"
+cyan = "#ecddf5"
+white = "#ffffff"

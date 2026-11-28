@@ -1,0 +1,17 @@
+# Quest Classic — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#ffd84a", bold]
+    inactiveBorderColor: ["#5b67a1"]
+    searchingActiveBorderColor: ["#5cb4ff", bold]
+    optionsTextColor: ["#9faee3"]
+    selectedLineBgColor: ["#1d3698"]
+    inactiveViewSelectedLineBgColor: ["#162981"]
+    cherryPickedCommitFgColor: ["#b68ba4"]
+    cherryPickedCommitBgColor: ["#1d3698"]
+    markedBaseCommitFgColor: ["#9faee3"]
+    markedBaseCommitBgColor: ["#1d3698"]
+    unstagedChangesColor: ["#ff6a5a"]
+    defaultFgColor: ["#f4f4f4"]
+  authorColors:
+    "*": "#cbd1ed"

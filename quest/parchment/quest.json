@@ -1,0 +1,21 @@
+{
+ "rice": "quest",
+ "variant": "parchment",
+ "title": "Quest Parchment",
+ "mode": "light",
+ "font": "Press Start 2P",
+ "body": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "radius": 6,
+ "w1": "#f8efd6",
+ "w2": "#eadbb0",
+ "frame": "#4a3220",
+ "frame2": "#b08f5e",
+ "text": "#2e2216",
+ "dim": "#6e5636",
+ "hi": "#b0302a",
+ "hp": "#3d7a2a",
+ "mp": "#2a5a9a",
+ "red": "#b0302a",
+ "ink": "#2a1c10"
+}

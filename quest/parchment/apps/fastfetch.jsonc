@@ -1,0 +1,98 @@
+// Quest Parchment: omarchy-themes/rices/quest/build.py
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file-raw",
+    "source": "~/.local/state/omarchy/current/theme/apps/quest-logo.txt",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;176;48;42",
+      "title": "38;2;74;50;32",
+      "output": "38;2;46;34;22",
+      "separator": "38;2;176;143;94"
+    },
+    "key": {
+      "width": 8
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "·"
+      },
+      "width": 10,
+      "border": {
+        "left": "",
+        "right": ""
+      }
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "38;2;61;122;42",
+        "yellow": "38;2;176;48;42",
+        "red": "38;2;176;48;42"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;176;48;42m▶ \u001b[38;2;74;50;32mЛИСТ ПЕРСОНАЖА"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;176;143;94m══════════════════════════"
+    },
+    {
+      "type": "title",
+      "key": "HERO",
+      "format": "{user-name}@{host-name}"
+    },
+    {
+      "type": "os",
+      "key": "CLASS",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "wm",
+      "key": "WEAPON",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "shell",
+      "key": "SPELL",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "EXP"
+    },
+    {
+      "type": "battery",
+      "key": "HP",
+      "format": "{capacity-bar} {capacity}"
+    },
+    {
+      "type": "memory",
+      "key": "MP",
+      "format": "{percentage-bar} {used}"
+    },
+    {
+      "type": "disk",
+      "key": "GOLD",
+      "format": "{size-available} free"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[48;2;234;219;176m   \u001b[48;2;248;239;214m   \u001b[48;2;176;143;94m   \u001b[48;2;176;48;42m   \u001b[48;2;61;122;42m   \u001b[48;2;42;90;154m   \u001b[48;2;176;48;42m   \u001b[48;2;74;50;32m   \u001b[0m"
+    }
+  ]
+}

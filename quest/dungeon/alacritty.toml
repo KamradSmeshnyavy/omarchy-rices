@@ -1,0 +1,44 @@
+# Quest Dungeon — alacritty
+[colors.primary]
+background = "#120406"
+foreground = "#ece0c8"
+
+[colors.cursor]
+text = "#050102"
+cursor = "#ff3b30"
+
+[colors.vi_mode_cursor]
+text = "#120406"
+cursor = "#a69294"
+
+[colors.search.matches]
+foreground = "#120406"
+background = "#9a7ae8"
+
+[colors.search.focused_match]
+foreground = "#050102"
+background = "#ff3b30"
+
+[colors.selection]
+text = "#ece0c8"
+background = "#28090d"
+
+[colors.normal]
+black = "#501b1c"
+red = "#ff3b30"
+green = "#e0453a"
+yellow = "#ff3b30"
+blue = "#a69294"
+magenta = "#c86a9a"
+cyan = "#cdbaa0"
+white = "#b39a80"
+
+[colors.bright]
+black = "#7b6655"
+red = "#ff665e"
+green = "#e76e65"
+yellow = "#ff665e"
+blue = "#baaaac"
+magenta = "#d48bb0"
+cyan = "#d8c9b5"
+white = "#ffffff"

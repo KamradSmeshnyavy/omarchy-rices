@@ -1,0 +1,5 @@
+# Quest Dusk — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#24103d,bg+:#4a216a,fg:#d9bfeb,fg+:#f6eefa
+--color=hl:#ffb347,hl+:#ffb347,info:#9a82ae,prompt:#ffb347
+--color=pointer:#ffb347,marker:#7ee08a,spinner:#bca1cd,header:#7fd0e8
+--color=border:#836899,label:#f6eefa,query:#f6eefa,selected-bg:#4a216a

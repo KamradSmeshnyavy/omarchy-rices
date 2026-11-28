@@ -1,0 +1,12 @@
+# Quest Forest — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#f5e663"
+magenta = "#bea296"
+red = "#ff7a5a"
+yellow = "#6fd3e0"
+green = "#8ee06a"
+cyan = "#d5edd7"
+blue = "#a0c3af"
+foreground = "#f2f8ee"
+background = "#0b2d1d"
+dark_background = "#15442c"
+lighter_background = "#1d5738"

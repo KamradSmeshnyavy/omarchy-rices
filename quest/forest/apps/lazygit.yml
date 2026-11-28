@@ -1,0 +1,17 @@
+# Quest Forest — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#f5e663", bold]
+    inactiveBorderColor: ["#648971"]
+    searchingActiveBorderColor: ["#6fd3e0", bold]
+    optionsTextColor: ["#a0c3af"]
+    selectedLineBgColor: ["#1d5738"]
+    inactiveViewSelectedLineBgColor: ["#15442c"]
+    cherryPickedCommitFgColor: ["#bea296"]
+    cherryPickedCommitBgColor: ["#1d5738"]
+    markedBaseCommitFgColor: ["#a0c3af"]
+    markedBaseCommitBgColor: ["#1d5738"]
+    unstagedChangesColor: ["#ff7a5a"]
+    defaultFgColor: ["#f2f8ee"]
+  authorColors:
+    "*": "#d5edd7"

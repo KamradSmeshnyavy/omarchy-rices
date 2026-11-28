@@ -1,0 +1,39 @@
+# Quest Dungeon — omarchy-rices/quest (свой пиксельный райс; сборка: build.py поверх ../nothing/build.py).
+# Слоты совпадают с ролями: green = строки, blue = функции, red = ошибки и т.д.
+mode = "dark"
+
+accent = "#ff3b30"
+cursor = "#ff3b30"
+selection = "#28090d"
+selection_foreground = "#ece0c8"
+selection_background = "#28090d"
+muted = "#7b6655"
+
+background = "#120406"
+dark_background = "#1e070a"
+darker_background = "#120406"
+lighter_background = "#28090d"
+
+foreground = "#ece0c8"
+dark_foreground = "#7b6655"
+light_foreground = "#b39a80"
+bright_foreground = "#ffffff"
+
+hyprland_active_border = "#ff3b30"
+hyprland_inactive_border = "#501b1c"
+
+red = "#ff3b30"
+yellow = "#ff3b30"
+orange = "#d8a630"
+green = "#e0453a"
+cyan = "#cdbaa0"
+blue = "#a69294"
+magenta = "#c86a9a"
+brown = "#7f5d1d"
+
+bright_red = "#ff665e"
+bright_yellow = "#ff665e"
+bright_green = "#e76e65"
+bright_cyan = "#d8c9b5"
+bright_blue = "#baaaac"
+bright_magenta = "#d48bb0"

@@ -1,0 +1,17 @@
+# Quest Parchment — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#b0302a", bold]
+    inactiveBorderColor: ["#cdb58e"]
+    searchingActiveBorderColor: ["#2a5a9a", bold]
+    optionsTextColor: ["#706c60"]
+    selectedLineBgColor: ["#f0e4c1"]
+    inactiveViewSelectedLineBgColor: ["#f4e9cb"]
+    cherryPickedCommitFgColor: ["#74435c"]
+    cherryPickedCommitBgColor: ["#f0e4c1"]
+    markedBaseCommitFgColor: ["#706c60"]
+    markedBaseCommitBgColor: ["#f0e4c1"]
+    unstagedChangesColor: ["#b0302a"]
+    defaultFgColor: ["#2e2216"]
+  authorColors:
+    "*": "#513f28"

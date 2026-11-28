@@ -1,0 +1,21 @@
+{
+ "rice": "quest",
+ "variant": "dungeon",
+ "title": "Quest Dungeon",
+ "mode": "dark",
+ "font": "Jacquard 12 Hell",
+ "body": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "radius": 0,
+ "w1": "#3a0d12",
+ "w2": "#120406",
+ "frame": "#d9cbb0",
+ "frame2": "#7a2a2a",
+ "text": "#ece0c8",
+ "dim": "#b39a80",
+ "hi": "#ff3b30",
+ "hp": "#e0453a",
+ "mp": "#9a7ae8",
+ "red": "#ff3b30",
+ "ink": "#050102"
+}

@@ -1,0 +1,44 @@
+# Quest Classic — alacritty
+[colors.primary]
+background = "#0d1a66"
+foreground = "#f4f4f4"
+
+[colors.cursor]
+text = "#0a0c20"
+cursor = "#ffd84a"
+
+[colors.vi_mode_cursor]
+text = "#0d1a66"
+cursor = "#9faee3"
+
+[colors.search.matches]
+foreground = "#0d1a66"
+background = "#5cb4ff"
+
+[colors.search.focused_match]
+foreground = "#0a0c20"
+background = "#ffd84a"
+
+[colors.selection]
+text = "#f4f4f4"
+background = "#1d3698"
+
+[colors.normal]
+black = "#5b67a1"
+red = "#ff6a5a"
+green = "#5ee06a"
+yellow = "#ffd84a"
+blue = "#9faee3"
+magenta = "#b68ba4"
+cyan = "#cbd1ed"
+white = "#a9b4e8"
+
+[colors.bright]
+black = "#727eba"
+red = "#ff8b7e"
+green = "#81e78b"
+yellow = "#ffe172"
+blue = "#b4c0e9"
+magenta = "#c6a5b8"
+cyan = "#d6dbf1"
+white = "#ffffff"

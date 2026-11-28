@@ -1,0 +1,21 @@
+{
+ "rice": "quest",
+ "variant": "forest",
+ "title": "Quest Forest",
+ "mode": "dark",
+ "font": "Press Start 2P",
+ "body": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "radius": 6,
+ "w1": "#2c7a4e",
+ "w2": "#0b2d1d",
+ "frame": "#f4f4f4",
+ "frame2": "#9fc7a9",
+ "text": "#f2f8ee",
+ "dim": "#bde4c4",
+ "hi": "#f5e663",
+ "hp": "#8ee06a",
+ "mp": "#6fd3e0",
+ "red": "#ff7a5a",
+ "ink": "#06140c"
+}

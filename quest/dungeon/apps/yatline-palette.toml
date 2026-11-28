@@ -1,0 +1,12 @@
+# Quest Dungeon — палитра yatline (scripts/omarchy-yatline-theme)
+accent = "#ff3b30"
+magenta = "#c86a9a"
+red = "#ff3b30"
+yellow = "#9a7ae8"
+green = "#e0453a"
+cyan = "#cdbaa0"
+blue = "#a69294"
+foreground = "#ece0c8"
+background = "#120406"
+dark_background = "#1e070a"
+lighter_background = "#28090d"

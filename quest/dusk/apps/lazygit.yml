@@ -1,0 +1,17 @@
+# Quest Dusk — lazygit
+gui:
+  theme:
+    activeBorderColor: ["#ffb347", bold]
+    inactiveBorderColor: ["#836899"]
+    searchingActiveBorderColor: ["#7fd0e8", bold]
+    optionsTextColor: ["#bca1cd"]
+    selectedLineBgColor: ["#4a216a"]
+    inactiveViewSelectedLineBgColor: ["#391956"]
+    cherryPickedCommitFgColor: ["#c598ac"]
+    cherryPickedCommitBgColor: ["#4a216a"]
+    markedBaseCommitFgColor: ["#bca1cd"]
+    markedBaseCommitBgColor: ["#4a216a"]
+    unstagedChangesColor: ["#ff6a7a"]
+    defaultFgColor: ["#f6eefa"]
+  authorColors:
+    "*": "#e6d4f2"

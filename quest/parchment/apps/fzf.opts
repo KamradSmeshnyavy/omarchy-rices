@@ -1,0 +1,5 @@
+# Quest Parchment — fzf: совпадения в сигнальном цвете, выбранная строка — приподнятый фон
+--color=bg:#f8efd6,bg+:#f0e4c1,fg:#6e5636,fg+:#2e2216
+--color=hl:#b0302a,hl+:#b0302a,info:#968568,prompt:#b0302a
+--color=pointer:#b0302a,marker:#3d7a2a,spinner:#706c60,header:#2a5a9a
+--color=border:#cdb58e,label:#2e2216,query:#2e2216,selected-bg:#dfcdac

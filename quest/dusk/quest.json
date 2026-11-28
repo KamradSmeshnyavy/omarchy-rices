@@ -1,0 +1,21 @@
+{
+ "rice": "quest",
+ "variant": "dusk",
+ "title": "Quest Dusk",
+ "mode": "dark",
+ "font": "Press Start 2P",
+ "body": "Pixelify Sans",
+ "mono": "Departure Mono",
+ "radius": 6,
+ "w1": "#6a2f8f",
+ "w2": "#24103d",
+ "frame": "#f4f4f4",
+ "frame2": "#c2a3d6",
+ "text": "#f6eefa",
+ "dim": "#d9bfeb",
+ "hi": "#ffb347",
+ "hp": "#7ee08a",
+ "mp": "#7fd0e8",
+ "red": "#ff6a7a",
+ "ink": "#12081c"
+}
